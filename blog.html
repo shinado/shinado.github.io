@@ -3,7 +3,10 @@
 <html>
 <head>
 
+<link href="style.css" rel="stylesheet" />
+<script src="http://leaverou.github.com/prefixfree/prefixfree.min.js"></script>
 <style type="text/css">
+
 @font-face {
     font-family: roboto;
 	src:url('res/Roboto-Light.ttf');
@@ -25,6 +28,9 @@ div {
 .menu {
 	font-size: 26px;
 }
+.menu a{
+	margin-right:10px;
+	}
 p{
  padding: 0;
  margin: 0;
@@ -42,18 +48,19 @@ margin-left:2%;
 
 <body>
 
-<div class="center">
+<div class="center" role="main">
 	<p class="mocaa">
 		<a>ARGIB</a> 
 		<a>TOSHI</a>
 	</p>
 	<p class="studio">ARCHITCTURE</p>
 	<p class="menu">
-		<a>PROJECTS</a> 
-		<a>ABOUT</a>
-		<a>CONTACT</a>
+		<a data-property="color" data-from="white" data-to="black">PROJECTS</a> 
+		<a data-property="color" data-from="white" data-to="black">ABOUT</a>
+		<a data-property="color" data-from="white" data-to="black">CONTACT</a>
 	</p>
 </div>
+<script src="index.js"></script>
 
 </body>
 
