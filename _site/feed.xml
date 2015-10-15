@@ -5,9 +5,167 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Oct 2015 10:57:29 +0800</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2015 10:57:29 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Oct 2015 11:03:16 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Oct 2015 11:03:16 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>“Activity killed by system“</title>
+        <description>&lt;p&gt;Coding in Android is not difficult. But sometimes if you don’t understand how Android works it may fail you and you have no idea what is going on. &lt;/p&gt;
+
+&lt;p&gt;Recently I encounted with this exception with Fragment:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. And I have a thread to load data before it’s displayed in fragment. Notice that when Activity is destroied, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong. &lt;/p&gt;
+
+&lt;p&gt;The code is simplified as follow:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//in onCreate()
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        Fragment fragment = new MainFragment();
+        getSupportFragmentManager().beginTransaction()
+            .replace(R.id.main_content, fragment)
+            .commit();
+    }
+}, 5000);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Therefore, the solution is quite simple, set a flag as true only after onDestroy() is called, then you won’t want to add this fragment when it’s true, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Override
+protected void onDestroy() {
+    super.onDestroy();
+    isDestroyed = true;
+}
+//in onCreate()
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        if(flag) return;
+        ...
+    }
+}, 5000);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It looks fine now, but there’s another problem. onCreate() in Fragment is called twice. 
+That’s because Activity cashes fragments itself. That’s simple, cause Fragment has its own onSaveInstanceState, if Activity doesn’t cache it, how it’s supposed to call onSaveInstanceState? Therefore, the solution is as simple as this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Override
+protected void onCreate(Bundle savedInstanceState) {
+	new Handler().postDelayed(new Runnable() {
+        @Override
+        public void run() {
+            addFragment(savedInstanceState == null);
+        }
+    }, 5000);
+...
+private void addFragment(boolean isNull){
+    Fragment fragment = null;
+    if(isNull){
+        fragment = new MainFragment();
+    }else{
+        fragment = getSupportFragmentManager().findFragmentByTag(&quot;fragment&quot;);
+    }
+    getSupportFragmentManager().beginTransaction()
+            .replace(R.id.main_content, fragment, &quot;fragment&quot;)
+            .commit();
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Sun, 11 Oct 2015 20:34:20 +0800</pubDate>
+        <link>/android/dev/2015/10/11/activity-killed-by-system.html</link>
+        <guid isPermaLink="true">/android/dev/2015/10/11/activity-killed-by-system.html</guid>
+        
+        
+        <category>android</category>
+        
+        <category>dev</category>
+        
+      </item>
+    
+      <item>
+        <title>“Activity killed by system“</title>
+        <description>&lt;p&gt;Coding in Android is not difficult. But sometimes if you don’t understand how Android works it may fail you and you have no idea what is going on. &lt;/p&gt;
+
+&lt;p&gt;Recently I encounted with this exception with Fragment:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. And I have a thread to load data before it’s displayed in fragment. Notice that when Activity is destroied, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong. &lt;/p&gt;
+
+&lt;p&gt;The code is simplified as follow:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//in onCreate()
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        Fragment fragment = new MainFragment();
+        getSupportFragmentManager().beginTransaction()
+            .replace(R.id.main_content, fragment)
+            .commit();
+    }
+}, 5000);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Therefore, the solution is quite simple, set a flag as true only after onDestroy() is called, then you won’t want to add this fragment when it’s true, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Override
+protected void onDestroy() {
+    super.onDestroy();
+    isDestroyed = true;
+}
+//in onCreate()
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        if(flag) return;
+        ...
+    }
+}, 5000);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It looks fine now, but there’s another problem. onCreate() in Fragment is called twice. 
+That’s because Activity cashes fragments itself. That’s simple, cause Fragment has its own onSaveInstanceState, if Activity doesn’t cache it, how it’s supposed to call onSaveInstanceState? Therefore, the solution is as simple as this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Override
+protected void onCreate(Bundle savedInstanceState) {
+	new Handler().postDelayed(new Runnable() {
+        @Override
+        public void run() {
+            addFragment(savedInstanceState == null);
+        }
+    }, 5000);
+...
+private void addFragment(boolean isNull){
+    Fragment fragment = null;
+    if(isNull){
+        fragment = new MainFragment();
+    }else{
+        fragment = getSupportFragmentManager().findFragmentByTag(&quot;fragment&quot;);
+    }
+    getSupportFragmentManager().beginTransaction()
+            .replace(R.id.main_content, fragment, &quot;fragment&quot;)
+            .commit();
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Sun, 11 Oct 2015 20:34:20 +0800</pubDate>
+        <link>/android/dev/2015/10/11/activity-killed-by-system.html</link>
+        <guid isPermaLink="true">/android/dev/2015/10/11/activity-killed-by-system.html</guid>
+        
+        
+        <category>android</category>
+        
+        <category>dev</category>
+        
+      </item>
     
       <item>
         <title>“Activity killed by system“</title>
