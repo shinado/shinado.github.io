@@ -1,239 +1,68 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="">
-
-  <link rel="canonical" href="/about/">
-  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml" />
-
-  <!-- Material Design Lite css Library -->
-  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-  
-  <!-- Material Design Fonts -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-  <!-- Custom theme css -->
-  <link rel="stylesheet" href="/css/main.css">
+  <title>Huang’s world - About</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
 </head>
+<body>
 
-
-  <body>
-
-    <!-- Start Layout -->
+  <nav class="main-nav">
     
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <!-- search layout -->
-<div class="super-search" id="js-search">
-  <ul class="super-search__results" id="js-search__results"></ul>        
-  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored super-search__close-btn" onclick="superSearch.toggle()">
-    <i class="material-icons">close</i>
-  </button>
+        <a href="/"> <span class="arrow">←</span> Home </a>
+    
+
+    
+    <a class="cta" href="/feed.xml">Subscribe</a>
+</nav>
+
+  
+      <div class="profile">
+    <section id="wrapper">
+        <header id="header">
+        
+            <a href="/about">
+                <img id="avatar" class="2x" src="/assets/images/avatar.png"/>
+            </a>
+        
+            <h1>‘Huang Yujian’</h1>
+            <h2>Simplicity. Passion. Love.</h2>
+        </header>
+    </section>
 </div>
-<!-- /end search -->
-        <header class="mdl-layout__header">
+  
 
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title"></span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      
+  <section id="wrapper" class="home">
+    <p>This is a static page. It could be an &#39;about page&#39; if you&#39;d like.</p>
 
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="js-search__input">
-          <i class="material-icons">search</i>
-        </label>
-
-        <div class="mdl-textfield__expandable-holder" >
-          <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
-        </div>
-      </div>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
-        <i class="material-icons">more_vert</i>
-      </button>
-
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
-        
-      </ul>
-    </div>
-  </header>
-
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
-    <nav class="mdl-navigation">
-    
-      
-      <a class="mdl-navigation__link" href="/about/">About</a>
-      
-    
-      
-    
-      
-    
-      
-    
-    </nav>
-
-  </div>
-
-
-    
-
-      <main class="mdl-layout__content">
-        <div class="post-ribbon"></div>
-<main class="post-main mdl-layout__content">
-  <div class="post-container mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-      <div class="mdl-color-text--grey-500">
-      
-      </div>
-      <h3>About</h3>
-      <article class="post-content">
-        <p><h6 id="a-jekyll-theme-based-in-google-material-design-lite-library">A Jekyll theme based in Google Material Design Lite library.</h6>
-
-<p>This is the base Jekyll Material Design Lite theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for the Jekyll MDL theme at: <a href="https://github.com/gdg-managua/jekyll-mdl">github.com/gdg-managua/jekyll-mdl</a></p>
-
-<p>You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
-
-<h6 id="sites-using-jekyll-mdl">Sites using jekyll-mdl</h6>
-
-<p>If you are using this cool jekyll theme, please open an issue or fork the project, add your site to the list and send a pull request, we will be happy to know where the theme are using.</p>
-
-<p><a href="http://fandekasp.github.io/">fandekasp.github.io</a></p>
-
-<h6 id="custom-themes">Custom Themes</h6>
-
-<p>If you don’t want the default site colors, you can create custom themes for the site in the <a href="http://www.getmdl.io/customize/index.html">mdl theme creator</a>. The site will create a custom css, something like this:</p>
-
-<pre><code> &lt;link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.teal-green.min.css" /&gt;
-</code></pre>
-
-<p>Now add this in the _includes/head.html file, under the main css and enjoy your new theme.</p>
-
-<h6 id="post-options">Post Options</h6>
-
-<p>All the post, require an image and maybe an author, the image are used in the cards and the autor used for the footer in the cards. For use the images and author, just add a new key in the post config, something like this:</p>
-
-<pre><code>---
-layout: post
-title:  "Welcome to jekyll-mdl"
-date:   2015-07-11 11:34:20
-categories: jekyll
-image: http://www.wchs4pets.org/wp-content/uploads/2015/03/cat_1-jpg.jpg
-author: Google Developers Group Managua
----
-</code></pre>
-
-<h6 id="layout-configuration">Layout Configuration</h6>
-<p>You can setup 4 types of layout</p>
-
-<pre><code>- Fixed Nav + Simple Card Grid
-- Fixed Nav + Highlight Post + Card Grid
-- Drawer Nav + Simple Card Grid
-- Drawer Nav + Highlight Post + Card Grid
-</code></pre>
-
-<p>For use this in the <a href="https://github.com/gdg-managua/jekyll-mdl/blob/master/_config.yml">_config.yml</a> select the type of layout, rebuild the website and voilà :smile:</p>
-
-<h6 id="contributing">Contributing</h6>
-<p>If you want to contribute to this project, please read the <a href="https://github.com/gdg-managua/jekyll-mdl/blob/master/CONTRIBUTING.md">CONTRIBUTING</a> file and perform the following steps</p>
-
-<pre><code># Fork this repository
-# Clone your fork
-jekyll serve --watch
-
-git checkout -b feature_branch
-# Implement your feature and tests
-git add . &amp;&amp; git commit
-git push -u origin feature_branch
-# Send a pull request for your feature branch
-</code></pre>
-
-<h6 id="team">Team</h6>
-<p><a href="http://github.com/oscarmcm"><img src="https://avatars.githubusercontent.com/u/2553459?v=3&amp;s=100" alt="Oscar Cortez" /></a>
-<a href="https://github.com/byroncorrales"><img src="https://avatars.githubusercontent.com/u/99616?v=3&amp;s=100" alt="Byron Corrales" /></a></p>
-
-<h6 id="license">License</h6>
-<p>Licensed under the Apache 2.0 license.</p>
-
-<p>See the <a href="https://github.com/gdg-managua/jekyll-mdl/blob/master/LICENSE.md">LICENSE</a> file for more details.</p>
-
-<p>Copyright © 2015 <a href="http://www.gdgmanagua.org">Google Developers Group Managua</a>.</p>
-</p>
-      </article>
-    </div>
-  </div>
-</main>
-
-        <footer class="mdl-mega-footer">
-  <div class="mdl-mega-footer--middle-section">
-
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">INFO</h1>
-      <ul class="mdl-mega-footer--link-list">
-        <li><a href="mailto:"></a></li>
-        <li><a href="/feed.xml">subscribe via RSS</a></li>
-      </ul>
-    </div>
-
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">SOCIAL</h1>
-      <ul class="mdl-mega-footer--link-list">
-        
-        
-      </ul>
-    </div>
-
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">ABOUT</h1>
-      <ul class="mdl-mega-footer--link-list">
-        <li></li>
-      </ul>
-    </div>
-
-
-  </div>
-
-  <div class="mdl-mega-footer--bottom-section">
-    <div class="mdl-logo"></div>
-    <ul class="mdl-mega-footer--link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy & Terms</a></li>
-    </ul>
-  </div>
-
+<footer id="footer">
+    <p class="small">© Copyright 2015 ‘Huang Yujian’</p>
 </footer>
 
-      </main>
+  </section>
 
-    </div>
-    <!-- /End Layout -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
-    <!-- Material Design Lite js Library -->
-    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-    
-    <script rel="javascript" type="text/javascript" src="/js/search.js"></script>
-    <script rel="javascript" type="text/javascript">
-      superSearch({
-        searchFile: '/feed.xml',
-        searchSelector: '#js-search', // CSS Selector for search container element.
-        inputSelector: '#js-search__input', // CSS selector for <input>
-        resultsSelector: '#js-search__results' // CSS selector for results container
-      });
-    </script>
-  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
 </html>
+
+
+
