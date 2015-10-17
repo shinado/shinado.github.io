@@ -4,6 +4,10 @@ permalink: about/
 profile: true
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+Indepedent developer, highly experinced in Android, practicing in iOS. 
+
+If you want to offer me a job, please [contact me][].
+
+[contact me]: mailto:shinado023@gmail.com
 
 {% include footer.html %}
