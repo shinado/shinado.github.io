@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Huang’s world</title>
-    <description>Simplicity. Passion. Love.</description>
+    <title>Dan’s world</title>
+    <description>Android developer</description>
     <link>http://shinado.github.io</link>
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Observe my mind</title>
+        
+        
+          <description>&lt;p&gt;I&amp;#39;ve been recently practicing observing my mind. It&amp;#39;s simple. Just sit tight and write down whatever is in your mind. This afternoon, I experienced something interesting which I believe will help me to find out what&amp;#39;s happening to me lately. &lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 17 Oct 2015 18:18:00 +0800</pubDate>
+        <link>http://shinado.github.io/2015/observe-my-mind/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2015/observe-my-mind/</guid>
+      </item>
     
       <item>
         <title>Activity killed by system</title>
@@ -22,19 +34,6 @@
         <pubDate>Sun, 11 Oct 2015 20:34:20 +0800</pubDate>
         <link>http://shinado.github.io/2015/activity-killed-by-system/</link>
         <guid isPermaLink="true">http://shinado.github.io/2015/activity-killed-by-system/</guid>
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        
-        
-          <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-</description>
-        
-        <pubDate>Sun, 10 Nov 2013 18:18:00 +0800</pubDate>
-        <link>http://shinado.github.io/2013/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2013/welcome-to-jekyll/</guid>
       </item>
     
   </channel>
