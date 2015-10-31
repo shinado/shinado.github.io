@@ -7,6 +7,18 @@
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Heap isn&#39;t heap</title>
+        
+        
+          <description>&lt;p&gt;What may come to your mind when this word heap comes to your mind? A data structure, or memory? Do you think the heap, in the memory, is organized in a heap structure? If you do, or literraly get confused, you should keep reading on.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 31 Oct 2015 22:00:00 +0800</pubDate>
+        <link>http://shinado.github.io/2015/make-a-plan/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2015/make-a-plan/</guid>
+      </item>
+    
+      <item>
         <title>Observe my mind</title>
         
         
