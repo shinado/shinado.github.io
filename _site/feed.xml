@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Dan’s world</title>
-    <description>Android developer</description>
+    <description>A beginner</description>
     <link>http://shinado.github.io</link>
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -10,7 +10,7 @@
         <title>People forget things</title>
         
         
-          <description>&lt;p&gt;I swear to god I have read this, comprehensived this thousands of times, yet I can&amp;#39;t recall any bit of it every time I come across it, therefore, as stupid as I might sound, I&amp;#39;m going to tape it damn it!!!&lt;/p&gt;
+          <description>&lt;p&gt;I swear to god I have read this, figured this out thousands of times, yet I can&amp;#39;t recall any bit of it every time I come across it, therefore, as stupid as I might sound, I&amp;#39;m going to tape it damn it!!!&lt;/p&gt;
 </description>
         
         <pubDate>Sat, 31 Oct 2015 22:00:00 +0800</pubDate>
