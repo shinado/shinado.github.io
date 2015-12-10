@@ -2,6 +2,8 @@
 title:  Crack it
 date:   2015-11-3 10:00:00
 description: Tips for you when things get messy
+categories: blahblah
+
 ---
 I was pretty freaked out this afternoon, having all those things messed up——true or not, al least that's what I believe, wandering on the street, thinking how wrong I have been. 
 

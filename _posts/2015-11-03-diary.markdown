@@ -2,6 +2,8 @@
 title:  I'm so screwed up
 date:   2015-11-3 10:00:00
 description: The price of freedom is high
+categories: blahblah
+
 ---
 I've recently become a fan of a YouTube channel called China Uncensor. I doubted Transparent Computing, a lot, which is help by our school dean. I have achieved nothing in my academic life. I got no one to write recommendation for me and I'm planing on study abroad? I'm totally screwed up. 
 

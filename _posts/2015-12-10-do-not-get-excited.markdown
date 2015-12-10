@@ -2,6 +2,8 @@
 title:  Do Not Get Excited 
 date:   2015-12-10 10:00:00
 description: A revelation from Buddhism
+categories: blahblah
+
 ---
 
 I was reading a book named "Zen Mind, Beginner's Mind" (yes the one Jobs read) when the title of one charpter hit me -- "Do not get excited"

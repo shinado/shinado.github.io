@@ -2,6 +2,8 @@
 title:  Heap isn't heap
 date:   2015-10-31 14:00:00
 description: don't mess around
+categories: blahblah
+
 ---
 What may come to your mind when this word heap comes to your mind? A data structure, or memory? Do you think the heap, in the memory, is organized in a heap structure? If you do, or literraly get confused, you should keep reading on.
 

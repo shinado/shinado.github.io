@@ -2,6 +2,7 @@
 title:  "Observe my mind"
 date:   2015-10-17 10:18:00
 description: Your mind isn't you
+categories: blahblah
 ---
 I've been recently practicing observing my mind. It's simple. Just sit tight and write down whatever is in your mind. This afternoon, I experienced something interesting which I believe will help me to find out what's happening to me lately. 
 
