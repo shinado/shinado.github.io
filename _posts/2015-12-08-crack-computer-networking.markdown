@@ -1,6 +1,6 @@
 ---
 title:  Crack Computer Networking
-date:   2015-11-3 10:00:00
+date:   2015-12-10 10:00:00
 description: Start from beginning -- day 1
 ---
 For the record, I'm new to it. I did take Computer Netwroking class in the second year of college but I really had no idea what it is.
