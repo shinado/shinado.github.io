@@ -1,0 +1,82 @@
+<p>Recently I encounted with this exception with Fragment:</p>
+
+<blockquote>
+  <p>java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState</p>
+</blockquote>
+
+<p>It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low. </p>
+
+<p>It won’t happen in every case cause most of the activities ain’t large enough to force system to shut them down. However, you can test it by setting ‘Don’t keep activities’ in Developer options. Once set, the system will force activities to shut them down when they’re invisible to users(like when you hit the home button, the system will shut this activity down, which triggles onSaveInstanceState()). Therefore, you may be able to test what is gonna happen when the system shuts activities down.</p>
+
+<p>Let’s go back to the problem. I have a thread to load data before fragment is created. Notice that when Activity is destroyed, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong. </p>
+
+<p>The code is simplified as follow:</p>
+
+<pre><code>//in onCreate()
+//Let's say we have this Runnable to do something
+//5 seconds later, it adds the fragment
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        Fragment fragment = new MainFragment();
+        getSupportFragmentManager().
+            beginTransaction()
+            .replace(R.id.main_content, fragment)
+            .commit();
+    }
+}, 5000);
+</code></pre>
+
+<p>Therefore, the solution is quite simple, set a flag as true only after onDestroy() is called, then you won’t want to add this fragment when it’s true, like this:</p>
+
+<pre><code>@Override
+protected void onDestroy() {
+    super.onDestroy();
+    flag = true;
+}
+//in onCreate()
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        if(flag) return;
+        Fragment fragment = new MainFragment();
+        getSupportFragmentManager().
+            beginTransaction()
+            .replace(R.id.main_content, fragment)
+            .commit();
+    }
+}, 5000);
+</code></pre>
+
+<p>Let’s change this code into async load, which means you’ll add this fragment in Main Thread. Your code may be like this:</p>
+
+<pre><code>//in onCreate()
+Fragment fragment = new MainFragment();
+getSupportFragmentManager()
+        .beginTransaction()
+        .replace(R.id.main_content, fragment)
+        .commit();
+</code></pre>
+
+<p>Then hit the home button and re-enter this activity. You’ll find onCreate() in MainFragment is called twice.</p>
+
+<p>That’s because Activity cashes fragments itself. That’s simple, cause Fragment has its own onSaveInstanceState, if Activity doesn’t cache it, how it’s supposed to call onSaveInstanceState? Therefore, the solution is as simple as this:</p>
+
+<pre><code>@Override
+protected void onCreate(Bundle savedInstanceState) {
+    addFragment(savedInstanceState == null);
+    ...
+private void addFragment(boolean isNull){
+    Fragment fragment = null;
+    if(isNull){
+        fragment = new MainFragment();
+    }else{
+        fragment = getSupportFragmentManager()
+               .findFragmentByTag("fragment");
+    }
+    getSupportFragmentManager()
+            .beginTransaction()
+            .replace(R.id.main_content, fragment, "fragment")
+            .commit();
+}
+</code></pre>
