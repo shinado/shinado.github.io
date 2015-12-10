@@ -6,7 +6,7 @@ description: A revelation from Buddhism
 
 I was reading a book named "Zen Mind, Beginner's Mind" (yes the one Jobs read) when the title of one charpter hit me -- "Do not get excited"
 
-![MacDown logo](excited.jpg)
+![excited](excited.jpg)
 
 Seriously, as what I am doing right now -- getting excited, people often think the passion is a thing. We should be passinated about something, or we should delicate our lives on something blahblah...Yes for someone who iw gennuis, that works, yet, the fact is, at least for me, and I believe the same for most of us, I am normal. There is no way that I could start our own company in the garage and turn it into the most valuable company in the world. It's not shameful to admit to be ordinary, pretending not to be is. That doesn't mean we are going to achieve nothing in our lives. You have to recognize it before you can really do something great. For most of the time, we do not work hard enough to make our gifts talk. That being said, working hard means a lot. Keeping a regular schedule will do most of the work that we do not need passion or whatever. 
 
