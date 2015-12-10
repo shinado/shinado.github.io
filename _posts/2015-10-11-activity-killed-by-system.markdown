@@ -1,11 +1,9 @@
 ---
-layout: post
 title:  Activity killed by system
 date:   2015-10-11 12:34:20
 description: Some tips of using fragments
 categories: Android dev
 highlight: true
-image: http://4.bp.blogspot.com/-IOD6VutWGlA/UW8Jq05M0DI/AAAAAAAAAeA/OVckWFybKqg/s1600/DSC01317.JPG
 ---
 Recently I encounted with this exception with Fragment:
 > java.lang.IllegalStateException: Can not perform this action after onSaveInstanceStateIt turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low. 
