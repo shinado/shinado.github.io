@@ -21,6 +21,7 @@ OK, so let's connect A to B with this magical cable. Things get easy, just trans
 
 OK I'm just kidding.
 
+# LAN
 Now we have a lot of devices and we want them to connect with each other. Things get little bit tricky cause you can't simply just transfer it cause now the case is multiple-to-mutiple. 
 
 Therefore we need a router. Before router there's actually another tiny thing, which I'm not going to talk a lot about it, called moderm, which basically does only one thing --  to transfer 0-1 data into the real data cause information could only be transfered in a form of high-votage-low-votage thing through physical objects. 
@@ -29,6 +30,7 @@ What the router does is dispatching. Now you have all the devices link to this r
 
 In the case of LAN, the address can't be easier, it could be a digital like 1,2,3 or whatever, as long as the router would keep it identical for each device. 
 
+# Address
 A LAN is a network shared by a small group of devices. But if you want a larger picture, things get different. Let's say, now, we'll have all devices connected to each other. So how about having a giant router witch is connected by all the devices in the world therefore, with the address goes from 1,2,3 all to infinite?
 
 That's really a bad idea. If this particular router breaks, the whole internet goes down. To make it stable and plugable, we need to come up with a better solution.
@@ -41,6 +43,7 @@ Sounds brilliant.
 
 However, there is another proble. Consider your address is "1234" in your LAN, which is identical. Now there's another computer whose address is also "1234" in another LAN, so how am I able to distinguish them? Seem like we need to upgrate our address system, to make it goes something like address "1234" is the address in this LAN so do not bother looking for it outside of this LAN while address "5678" is somewhere you should really go out of this LAN to reach it. 
 
+# IP Address
 This address system, is what we call IP address. There are actually two versions of IP address, one is called IPv4, which we are talking about normally, and IPv6. The IPv4 address consists of 32 bits which limits the address to....OK, save me some time by looking into its wikipedia... 
 
 As I just described, there must be two types of addresses, one is kinda private, that by looking at this address, routers know it's within this LAN while the other is public, which could be reached directly by computers(via routers). The public one goes pretty serious cause it's the identical, since all computers to have DIRECT accesss to. In order to get a public address, you need to apply from NIC. Therefor we defined private address limited to three groups:

@@ -6,7 +6,13 @@ categories: Android dev
 
 ---
 
+I've started building Jujuj with annotation. I want to make it as effecient as possible therefore I want to replace reflection with pre-process.
 
-I've been building Jujuj with annotation. I want to make it as effecient as possible therefore I want to replace reflection with pre-process.
+However I got a problem. I was trying to add my lib module to the complie module as its dependency but somehow, the code in compile module can not find the class defined in lib module. What an odd. It turned out that this compile module, applying java plugin, can not depend on a module based on Android. Very reasonable and obvious. Then I turned to the source code of ButterKnife in Github. The structure goes something like this:
 
-I found this ariticle very helpful. However I got a problem. I was trying to add my lib module to the complie module as its dependency but somehow, the code in compile module can not find the class defined in lib module. What an odd. It turned out that this compile module, applying java plugin, can not depend on a module based on Android. Very reasonable and obvious. Then I turned to the source code of ActiveAndroid in Github. The solution is straitforward. Since the AbstractProcessor relies on plugin java, not android, we can simply put android.jar into the libs folder, as a dependency of it. However, doing a reverse way seems not pratical. I tried to apply both java and Android and I got an error.
+    lib      ←      app
+     ↓                ↓
+     
+    annotation  ← compiler 
+    
+Notice that both annotation and compiler apply java while app and lib apply android.

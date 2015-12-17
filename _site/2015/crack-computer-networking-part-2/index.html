@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dan’s world - Crack Computer Networking</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    
+        <a href="/"> <span class="arrow">←</span> Home </a>
+    
+
+    
+        
+            <a href="/about">About </a>
+        
+    
+    <a class="cta" href="/feed.xml">Subscribe</a>
+</nav>
+
+  
+
+  <section id="wrapper" class="">
+    <article class="post">
+    <header>
+        <h1>Crack Computer Networking</h1>
+        <h2 class="headline">December 10, 2015</h2>
+    </header>
+    <section id="post-body">
+        <blockquote>
+<p>On my last post I was talking about IP address. So let us go on with it.</p>
+</blockquote>
+
+<h1>IP Address</h1>
+
+<p>Check your ip address and you&#39;ll probably find it goes something like &quot;192.168.x.x&quot;. That&#39;s your inner private IP address. It&#39;s like your room number. And the thing is, your number could be 402 or something while mine could be the same, except that we are in different buildings. You can consider that all computers connected to a router rooms in the same building. Then how do two rooms in the same, or different buildings talk? In order to solve this problem, the router is cricial. Consider router a busy deliver man in building A, who everyone knows his room number, that&#39;s say 101. When room 123 wants to talk to room 102, it asks the router, in room 101 to deliver it. The address of deliver man is what we call GATEWAY. You can always find your gateway in your computer is &quot;192.168.1.1&quot; or &quot;192.168.0.1&quot;. That&#39;s more of an International practice.  </p>
+
+<p>Now what if room 102 in this building wants to talk to room 102 in building B? How to do it?</p>
+
+<p>That&#39;s say building A and building B are in the same community. Like how it goes in delivering messages within a building, there&#39;s another same guy, let&#39;s say he lives in building 0, responsible for delivering messages from buildings to buildings. For people living in building A, they only know this deliver man lives in room 101, that&#39;s his address. But for the community, it doesn&#39;t care where this deliver man in building A lives, it only cares about which building. Therefore, he has two addresses, room 101, as the address to everyone living in this building, which in the internet world, is known as LAN IP, and, that&#39;s say building 12, the address to the community, known as WAN IP.   </p>
+
+<p>This stradegy goes all the way to the whole internet. Now, one important thing is, how to determine wether an address is whitin this group(building or community or whatever) or outside of it? Here it goes subnet mask.</p>
+
+<h1>Subnet</h1>
+
+<p>Check your subnet mask you&#39;re most likely to  find it &quot;255.255.255.0&quot;. Like the name suggests, it&#39;s actually a mask to determine which part of your IP address points to the host and which is your identity under the ROUTE it connects to. How does it do that? That&#39;s because IP address is basically a serial of 0/1 digital. For example, address &quot;192.168.1.123&quot; is:
+11000000.10101000.00000001.01111011
+while &quot;255.255.255.0&quot; is
+11111111.11111111.11111111.00000000 
+The &quot;1&quot; part masks the host address, which is &quot;192.168.1&quot;, while the o part masks the identity &quot;123&quot;, which is the identical address of your machine.</p>
+
+<p>In this case, if my computer(192.168.1.123) wants to visit the device with address of &quot;192.168.1.124&quot;, then the router knows that this address is whithin this LAN cause the host(192.168.1) is  same as mine, therefore, it just dispatches the message to this &quot;192.168.1.124&quot;. </p>
+
+<p>Now, what if I want to access to &quot;192.168.1.123&quot; under anther route? Well, basically you can&#39;t do this. You&#39;ll probabely say, bullshit, I can send my message to anyone connected to the internet. That&#39;s another we&#39;ll talk about later. That&#39;s a good arguement. The only reason you can do a online instant chatting is your application connects to a server first, which records your exact address. When you send message to anther person, the server knows his address therefore messages can reach it. How does it know that? Let&#39;s slow down a little bit. Before we get to tackle this problem, let&#39;s see another example.   </p>
+
+<p>Consider you have a router A, which a computer A and another router B is connected to, and computer B is connected to router B. It goes something like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">      routerA
+       /    \
+computerA  routerB
+             |
+           computerB
+</code></pre></div>
+<p>Let&#39;s say routerA allocates IP address with netmask &quot;255.255.255.0&quot;, which means the computer connected to it has IP address let&#39;s say &quot;192.168.0.2&quot; while the gate way is &quot;192.168.0.1&quot;. Notice here, routerB is considered a normal device, with IP address assigned to, let&#39;s say,  &quot;192.168.0.3&quot;. So now, what is computerB&#39;s gateway supposed to be? &quot;192.168.0.3&quot;? If so, there would be a problem. The IP address of computerB therefore is limited to &quot;192.168.0.x&quot;, which is supposed to be the subnet of routerA while in fact it is the subnet of routerB. Think about it, when computerB wants to talk to computerA with its IP &quot;192.168.0.2&quot;, routerB would only look up devices within it. In fact, the router forbits any attemptation of setting its LAN IP address in the same subnet as its WAN IP address. Therefore, we set routerB&#39;s LAN IP as &quot;192.168.1.1&quot;. </p>
+
+<p>So if computerB wants to talk to computerA, with its LAN IP address, &quot;192.168.0.2&quot;, it talks routerB first. RouterB maps this ip with netmask, knowing this ip is not its subnet, then it throws this message to its router, A.  When routerA looks up this address, it knows it&#39;s its subnet, then sends it to computerA. </p>
+
+<p>But if computerA, knowing computerB&#39;s IP address, wants to talk to computerB. Will that work? The answer is no. Routers only do two things, either deliver this message to someone in its subnet, or handle it over to its parent router. You can consider LAN IP address a total privacy. It only works for devices inside of it. </p>
+
+<h1>How Does It Come To You</h1>
+
+<p>When you visit google.com, you&#39;re actually refering to its public IP. The mechanism is quite simple. Check your internet setting you&#39;ll find something like DNS address. It&#39;s a server that transforms a readable website address into IP address that internet recognizes. Therefore, when you visit www.google.com, it actually looks up in DNS and return its PUBLIC IP address to you. If you know Google&#39;s public IP address, it does not make any differences to directly type in it. </p>
+
+<p>Website, no matter how complicated it is, is bassically a set of resources in another computer. Therefore, by visiting a website, what you are actually doing is visiting some files in another computer. But how do all those files come back to you? You know the website&#39;s public IP address which enables you to have a direct access to, but, all it knows is merly your private IP, it doesn&#39;t know where you are?</p>
+
+<p>That&#39;s half of the truth. It does not need to know where you really are, cause someone else will do all the work to find you -- Routers. All our communications are via routers. We throw our messages to our direct routers, they throws them to their routers, until they reach the exit of this private world, into the internet. Routers know all your trace on the internet. 
+(...to be continued)</p>
+
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="http://twitter.com/shinado023">
+        <img class="avatar" src="/assets/images/avatar.png">
+        <div>
+            <span class="dark">Dan</span>
+            <span>A beginner</span>
+        </div>
+    </a>
+
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http://shinado.github.io/2015/crack-computer-networking-part-2/ - Crack Computer Networking by @shinado023"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+    </section>
+</footer>
+
+<!-- Disqus comments -->
+
+
+<!-- Archive post list -->
+
+    <ul id="post-list" class="archive readmore">
+        <h3>Read more</h3>
+        
+            <li>
+                <a href="/2015/android-annotation/">Pre-process in Android<aside class="dates">Dec 14</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/do-not-get-excited/">Do Not Get Excited<aside class="dates">Dec 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/crack-computer-networking-part-2/">Crack Computer Networking<aside class="dates">Dec 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/crack-computer-networking/">Crack Computer Networking<aside class="dates">Dec 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/diary/">I'm so screwed up<aside class="dates">Nov 03</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/crack-it/">Crack it<aside class="dates">Nov 03</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/make-a-plan/">Heap isn't heap<aside class="dates">Oct 31</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/observe-my-mind/">Observe my mind<aside class="dates">Oct 17</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/activity-killed-by-system/">Activity killed by system<aside class="dates">Oct 11</aside></a>
+            </li>
+        
+    </ul>
+
+
+
+
+
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
+
+
+

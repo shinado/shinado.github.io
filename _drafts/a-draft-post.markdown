@@ -1,14 +1,14 @@
 ---
-title:  "A Draft Post"
-description: Work in progress
-## date: add a date when publishing
+title:  Crack Computer Networking
+date:   2015-12-17 10:00:00
+description: Start from beginning -- day 3
+categories: Basic Computer
+
 ---
 
-Drafts are posts without a date. They’re posts you’re still working on and don’t want to publish yet. To get up and running with drafts, check the _drafts folder in the site’s root.
+On my last post I metioned the functionality of routers. Now I'm gonna talk about it. 
 
-To preview your site with drafts, simply run **`jekyll serve`** or **`jekyll build`** with the **`--drafts`** switch. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
+# Routing
+Routers do not just simply deliver messages, it also does something more. It maintains a table called routing table which tracks down every intention of the computers connected to it. This table is what makes it possible for all the resources on the internet going back to you. 
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Image that you're typing Google's page in browser, when you hit enter, the browser will look up Google's public IP address in DNS, then it sends this IP address to the router. The router got it, marking it as the destination. Where is it supposed to be found? It forwarded to its parent, 

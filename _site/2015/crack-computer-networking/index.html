@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dan’s world - Crack Computer Networking</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    
+        <a href="/"> <span class="arrow">←</span> Home </a>
+    
+
+    
+        
+            <a href="/about">About </a>
+        
+    
+    <a class="cta" href="/feed.xml">Subscribe</a>
+</nav>
+
+  
+
+  <section id="wrapper" class="">
+    <article class="post">
+    <header>
+        <h1>Crack Computer Networking</h1>
+        <h2 class="headline">December 10, 2015</h2>
+    </header>
+    <section id="post-body">
+        <p>For the record, I&#39;m new to it. I did take Computer Netwroking class in the second year of college but I really had no idea what it is.</p>
+
+<p>Not anymore.</p>
+
+<p>So now I&#39;ll just re-create the whole internet(upon the  physical layer).</p>
+
+<p>To begin with, the original idea might be easy: you have something in your computer and you want to share it with someone else. Let&#39;s say A wants to send a message &quot;hello&quot; to B.</p>
+
+<p>How?</p>
+
+<p>To simplify it little bit, let&#39;s assume you have a cable which automatically transfer digital data to anther device linked to it.</p>
+
+<p>OK, so let&#39;s connect A to B with this magical cable. Things get easy, just transfer it. :)</p>
+
+<p>OK I&#39;m just kidding.</p>
+
+<h1>LAN</h1>
+
+<p>Now we have a lot of devices and we want them to connect with each other. Things get little bit tricky cause you can&#39;t simply just transfer it cause now the case is multiple-to-mutiple. </p>
+
+<p>Therefore we need a router. Before router there&#39;s actually another tiny thing, which I&#39;m not going to talk a lot about it, called moderm, which basically does only one thing --  to transfer 0-1 data into the real data cause information could only be transfered in a form of high-votage-low-votage thing through physical objects. </p>
+
+<p>What the router does is dispatching. Now you have all the devices link to this router, then things get easier. Then the router says &quot;ok guys, you all need an address so I can know which one of you I should dispatch, if you don&#39;t know which address is better for you then I can assign one for you&quot;. Upon a device is connected to the router, the address of the router is told to it. The addresses of all devices are recorded in this router. Therefore, once you connect to this router, you&#39;re able to know others&#39; addresses (if router tells you) therefore you&#39;re able to communicate with one another. Now, you&#39;ve got a LAN.</p>
+
+<p>In the case of LAN, the address can&#39;t be easier, it could be a digital like 1,2,3 or whatever, as long as the router would keep it identical for each device. </p>
+
+<h1>Address</h1>
+
+<p>A LAN is a network shared by a small group of devices. But if you want a larger picture, things get different. Let&#39;s say, now, we&#39;ll have all devices connected to each other. So how about having a giant router witch is connected by all the devices in the world therefore, with the address goes from 1,2,3 all to infinite?</p>
+
+<p>That&#39;s really a bad idea. If this particular router breaks, the whole internet goes down. To make it stable and plugable, we need to come up with a better solution.</p>
+
+<p>In computer science, it&#39;s a good idea to divide a big problem into smaller ones, and smaller one into even smaller ones, until the problem is easy to solve or we already have answer to.</p>
+
+<p>What we have now is a LAN, with a dozen of computers. How about making others computers assembled in the same way then we have many LANs, the top of which is a router. Now let&#39;s consider this router a computer, then we could connect some routers to another router with high level, which could finally connect every computer in the world. This idea is like, some indivisuals make a family, some families living in an apartment makse a community, some communities make a county, some counties make a city....until they makes the whole earth. </p>
+
+<p>Sounds brilliant. </p>
+
+<p>However, there is another proble. Consider your address is &quot;1234&quot; in your LAN, which is identical. Now there&#39;s another computer whose address is also &quot;1234&quot; in another LAN, so how am I able to distinguish them? Seem like we need to upgrate our address system, to make it goes something like address &quot;1234&quot; is the address in this LAN so do not bother looking for it outside of this LAN while address &quot;5678&quot; is somewhere you should really go out of this LAN to reach it. </p>
+
+<h1>IP Address</h1>
+
+<p>This address system, is what we call IP address. There are actually two versions of IP address, one is called IPv4, which we are talking about normally, and IPv6. The IPv4 address consists of 32 bits which limits the address to....OK, save me some time by looking into its wikipedia... </p>
+
+<p>As I just described, there must be two types of addresses, one is kinda private, that by looking at this address, routers know it&#39;s within this LAN while the other is public, which could be reached directly by computers(via routers). The public one goes pretty serious cause it&#39;s the identical, since all computers to have DIRECT accesss to. In order to get a public address, you need to apply from NIC. Therefor we defined private address limited to three groups:
+A 10.0.0.0 -- 10.255.255.255
+B 172.16.0.0 -- 172.31.255.255
+C 192.168.0.0 -- 192.168.255.255</p>
+
+<p>Does &quot;192.168.x.x&quot; ring any bell? It&#39;s normally your own IP address. It&#39;s private which means evey one under different LAN would hava this same address therefore, visiting 192.168.x.x will never goes out of the LAN. </p>
+
+<p>(...to be continued) </p>
+
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="http://twitter.com/shinado023">
+        <img class="avatar" src="/assets/images/avatar.png">
+        <div>
+            <span class="dark">Dan</span>
+            <span>A beginner</span>
+        </div>
+    </a>
+
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http://shinado.github.io/2015/crack-computer-networking/ - Crack Computer Networking by @shinado023"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+    </section>
+</footer>
+
+<!-- Disqus comments -->
+
+
+<!-- Archive post list -->
+
+    <ul id="post-list" class="archive readmore">
+        <h3>Read more</h3>
+        
+            <li>
+                <a href="/2015/android-annotation/">Pre-process in Android<aside class="dates">Dec 14</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/do-not-get-excited/">Do Not Get Excited<aside class="dates">Dec 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/crack-computer-networking-part-2/">Crack Computer Networking<aside class="dates">Dec 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/crack-computer-networking/">Crack Computer Networking<aside class="dates">Dec 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/diary/">I'm so screwed up<aside class="dates">Nov 03</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/crack-it/">Crack it<aside class="dates">Nov 03</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/make-a-plan/">Heap isn't heap<aside class="dates">Oct 31</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/observe-my-mind/">Observe my mind<aside class="dates">Oct 17</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/activity-killed-by-system/">Activity killed by system<aside class="dates">Oct 11</aside></a>
+            </li>
+        
+    </ul>
+
+
+
+
+
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
+
+
+
