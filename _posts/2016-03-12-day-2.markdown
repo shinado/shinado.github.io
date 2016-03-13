@@ -1,0 +1,9 @@
+---
+title:  Day 2
+date:   2016-03-13 10:24:00
+description: Accept it
+categories: Diary
+
+---
+
+Finally I got it. I'll never be a good coder. For all the time I've been reclining myself on instinct. My brain is pretty much messed up. 
