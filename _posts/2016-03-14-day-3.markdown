@@ -1,0 +1,16 @@
+---
+title:  Day 3
+date:   2016-03-14 10:24:00
+description: 
+categories: Diary
+
+---
+Worked on CASP, thesis. 
+
+Developed a chrome extension to push things on Chrome to Piping, which is awesome. 
+
+Developed a diary pipe in Piping. Gonna move my diaries there. This is the last diary here. 
+
+Thesis: 13875
+
+Rating: 8
