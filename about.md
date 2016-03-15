@@ -10,6 +10,8 @@ You can check my [studio] to see what I've released, or fork me on [GitHub].
 
 If you like me, read my [diary] to see what's going on everyday. 
 
+I'm also the author to two books. Check [here](http://item.jd.com/11037613.html) and [here](http://item.jd.com/11544524.html) but do not buy them cause they are shitty. 
+
 I make [resumes], occationaly(Notice I've got a CLIENT already). 
 
 I travel around and take [photos] sometimes with my Korean girlfriend(If you have a job in China to offer her, please contact me). 
