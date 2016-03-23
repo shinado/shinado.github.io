@@ -38,18 +38,19 @@
         <p>Recently I encounted with this exception with Fragment:</p>
 
 <blockquote>
-<p>java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState</p>
+  <p>java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState</p>
 </blockquote>
 
 <p>It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low. </p>
 
-<p>It won&#39;t happen in every case cause most of the activities ain&#39;t large enough to force system to shut them down. However, you can test it by setting ‘Don&#39;t keep activities’ in Developer options. Once set, the system will force activities to shut them down when they&#39;re invisible to users(like when you hit the home button, the system will shut this activity down, which triggles onSaveInstanceState()). Therefore, you may be able to test what is gonna happen when the system shuts activities down.</p>
+<p>It won’t happen in every case cause most of the activities ain’t large enough to force system to shut them down. However, you can test it by setting ‘Don’t keep activities’ in Developer options. Once set, the system will force activities to shut them down when they’re invisible to users(like when you hit the home button, the system will shut this activity down, which triggles onSaveInstanceState()). Therefore, you may be able to test what is gonna happen when the system shuts activities down.</p>
 
-<p>Let&#39;s go back to the problem. I have a thread to load data before fragment is created. Notice that when Activity is destroyed, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong. </p>
+<p>Let’s go back to the problem. I have a thread to load data before fragment is created. Notice that when Activity is destroyed, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong. </p>
 
 <p>The code is simplified as follow:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">//in onCreate()
-//Let&#39;s say we have this Runnable to do something
+
+<pre><code>//in onCreate()
+//Let's say we have this Runnable to do something
 //5 seconds later, it adds the fragment
 new Handler().postDelayed(new Runnable() {
     @Override
@@ -61,9 +62,11 @@ new Handler().postDelayed(new Runnable() {
             .commit();
     }
 }, 5000);
-</code></pre></div>
-<p>Therefore, the solution is quite simple, set a flag as true only after onDestroy() is called, then you won&#39;t want to add this fragment when it&#39;s true, like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">@Override
+</code></pre>
+
+<p>Therefore, the solution is quite simple, set a flag as true only after onDestroy() is called, then you won’t want to add this fragment when it’s true, like this:</p>
+
+<pre><code>@Override
 protected void onDestroy() {
     super.onDestroy();
     flag = true;
@@ -80,19 +83,23 @@ new Handler().postDelayed(new Runnable() {
             .commit();
     }
 }, 5000);
-</code></pre></div>
-<p>Let&#39;s change this code into async load, which means you&#39;ll add this fragment in Main Thread. Your code may be like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">//in onCreate()
+</code></pre>
+
+<p>Let’s change this code into async load, which means you’ll add this fragment in Main Thread. Your code may be like this:</p>
+
+<pre><code>//in onCreate()
 Fragment fragment = new MainFragment();
 getSupportFragmentManager()
         .beginTransaction()
         .replace(R.id.main_content, fragment)
         .commit();
-</code></pre></div>
-<p>Then hit the home button and re-enter this activity. You&#39;ll find onCreate() in MainFragment is called twice.</p>
+</code></pre>
 
-<p>That&#39;s because Activity cashes fragments itself. That&#39;s simple, cause Fragment has its own onSaveInstanceState, if Activity doesn&#39;t cache it, how it&#39;s supposed to call onSaveInstanceState? Therefore, the solution is as simple as this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">@Override
+<p>Then hit the home button and re-enter this activity. You’ll find onCreate() in MainFragment is called twice.</p>
+
+<p>That’s because Activity cashes fragments itself. That’s simple, cause Fragment has its own onSaveInstanceState, if Activity doesn’t cache it, how it’s supposed to call onSaveInstanceState? Therefore, the solution is as simple as this:</p>
+
+<pre><code>@Override
 protected void onCreate(Bundle savedInstanceState) {
     addFragment(savedInstanceState == null);
     ...
@@ -102,14 +109,15 @@ private void addFragment(boolean isNull){
         fragment = new MainFragment();
     }else{
         fragment = getSupportFragmentManager()
-               .findFragmentByTag(&quot;fragment&quot;);
+               .findFragmentByTag("fragment");
     }
     getSupportFragmentManager()
             .beginTransaction()
-            .replace(R.id.main_content, fragment, &quot;fragment&quot;)
+            .replace(R.id.main_content, fragment, "fragment")
             .commit();
 }
-</code></pre></div>
+</code></pre>
+
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
@@ -143,35 +151,15 @@ private void addFragment(boolean isNull){
         <h3>Read more</h3>
         
             <li>
+                <a href="/2016/introduce-of-Jujuj/">Introduce of Jujuj<aside class="dates">Mar 22</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2016/start-python/">Start Python<aside class="dates">Jan 02</aside></a>
+            </li>
+        
+            <li>
                 <a href="/2015/android-annotation/">Pre-process in Android<aside class="dates">Dec 14</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/do-not-get-excited/">Do Not Get Excited<aside class="dates">Dec 10</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/crack-computer-networking-part-2/">Crack Computer Networking<aside class="dates">Dec 10</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/crack-computer-networking/">Crack Computer Networking<aside class="dates">Dec 10</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/diary/">I'm so screwed up<aside class="dates">Nov 03</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/crack-it/">Crack it<aside class="dates">Nov 03</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/make-a-plan/">Heap isn't heap<aside class="dates">Oct 31</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/observe-my-mind/">Observe my mind<aside class="dates">Oct 17</aside></a>
             </li>
         
             <li>

@@ -7,101 +7,42 @@
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Introduce of Jujuj</title>
+        
+        
+          <description>&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/3215337/13972466/f7fdb030-f0d3-11e5-9149-fe37ffc5ea44.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 22 Mar 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/introduce-of-Jujuj/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/introduce-of-Jujuj/</guid>
+      </item>
+    
+      <item>
+        <title>Start Python</title>
+        
+        
+          <description>&lt;p&gt;When I was trying to install Scrapy I got this error:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 02 Jan 2016 18:00:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/start-python/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/start-python/</guid>
+      </item>
+    
+      <item>
         <title>Pre-process in Android</title>
         
         
-          <description>&lt;p&gt;I&amp;#39;ve started building Jujuj with annotation. I want to make it as effecient as possible therefore I want to replace reflection with pre-process.&lt;/p&gt;
+          <description>&lt;p&gt;I’ve started building Jujuj with annotation. I want to make it as effecient as possible therefore I want to replace reflection with pre-process.&lt;/p&gt;
+
 </description>
         
         <pubDate>Mon, 14 Dec 2015 18:00:00 +0800</pubDate>
         <link>http://shinado.github.io/2015/android-annotation/</link>
         <guid isPermaLink="true">http://shinado.github.io/2015/android-annotation/</guid>
-      </item>
-    
-      <item>
-        <title>Do Not Get Excited</title>
-        
-        
-          <description>&lt;p&gt;I was reading a book named &amp;quot;Zen Mind, Beginner&amp;#39;s Mind&amp;quot; (yes the one Jobs read) when the title of one charpter hit me -- &amp;quot;Do not get excited&amp;quot;&lt;/p&gt;
-</description>
-        
-        <pubDate>Thu, 10 Dec 2015 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/do-not-get-excited/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/do-not-get-excited/</guid>
-      </item>
-    
-      <item>
-        <title>Crack Computer Networking</title>
-        
-        
-          <description>&lt;blockquote&gt;
-&lt;p&gt;On my last post I was talking about IP address. So let us go on with it.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        
-        <pubDate>Thu, 10 Dec 2015 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/crack-computer-networking-part-2/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/crack-computer-networking-part-2/</guid>
-      </item>
-    
-      <item>
-        <title>Crack Computer Networking</title>
-        
-        
-          <description>&lt;p&gt;For the record, I&amp;#39;m new to it. I did take Computer Netwroking class in the second year of college but I really had no idea what it is.&lt;/p&gt;
-</description>
-        
-        <pubDate>Thu, 10 Dec 2015 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/crack-computer-networking/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/crack-computer-networking/</guid>
-      </item>
-    
-      <item>
-        <title>I&#39;m so screwed up</title>
-        
-        
-          <description>&lt;p&gt;I&amp;#39;ve recently become a fan of a YouTube channel called China Uncensor. I doubted Transparent Computing, a lot, which is help by our school dean. I have achieved nothing in my academic life. I got no one to write recommendation for me and I&amp;#39;m planing on study abroad? I&amp;#39;m totally screwed up. &lt;/p&gt;
-</description>
-        
-        <pubDate>Tue, 03 Nov 2015 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/diary/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/diary/</guid>
-      </item>
-    
-      <item>
-        <title>Crack it</title>
-        
-        
-          <description>&lt;p&gt;I was pretty freaked out this afternoon, having all those things messed up——true or not, al least that&amp;#39;s what I believe, wandering on the street, thinking how wrong I have been. &lt;/p&gt;
-</description>
-        
-        <pubDate>Tue, 03 Nov 2015 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/crack-it/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/crack-it/</guid>
-      </item>
-    
-      <item>
-        <title>Heap isn&#39;t heap</title>
-        
-        
-          <description>&lt;p&gt;What may come to your mind when this word heap comes to your mind? A data structure, or memory? Do you think the heap, in the memory, is organized in a heap structure? If you do, or literraly get confused, you should keep reading on.&lt;/p&gt;
-</description>
-        
-        <pubDate>Sat, 31 Oct 2015 22:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/make-a-plan/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/make-a-plan/</guid>
-      </item>
-    
-      <item>
-        <title>Observe my mind</title>
-        
-        
-          <description>&lt;p&gt;I&amp;#39;ve been recently practicing observing my mind. It&amp;#39;s simple. Just sit tight and write down whatever is in your mind. This afternoon, I experienced something interesting which I believe will help me to find out what&amp;#39;s happening to me lately. &lt;/p&gt;
-</description>
-        
-        <pubDate>Sat, 17 Oct 2015 18:18:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/observe-my-mind/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/observe-my-mind/</guid>
       </item>
     
       <item>
@@ -111,10 +52,11 @@
           <description>&lt;p&gt;Recently I encounted with this exception with Fragment:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState&lt;/p&gt;
+  &lt;p&gt;java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low. &lt;/p&gt;
+
 </description>
         
         <pubDate>Sun, 11 Oct 2015 20:34:20 +0800</pubDate>
