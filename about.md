@@ -16,7 +16,7 @@ I make [resumes], occationaly, for myself or my clients(If you want to make a ni
 
 If you want to offer me a job, please [contact me].
 
-I travel around and take [photos] sometimes with my Korean girlfriend(If you have a job in China to offer her, please also [contact me]). 
+I travel around and take [photos] with my Korean girlfriend(who majors in Indonesian/Malaysian ,so if you have a job in China or Malaysia to offer her, please also [contact me]). 
 
 Anyway, [contact me].
 
@@ -25,6 +25,6 @@ Anyway, [contact me].
 [GitHub]: http://github.com/shinado
 [diary]: http://1.yilaunch.sinaapp.com/diary/diary.php
 [resumes]: http://danresume.lofter.com
-[photos]: http://danvel.lofter.com
+[photos]: http://danist.lofter.com
 
 {% include footer.html %}
