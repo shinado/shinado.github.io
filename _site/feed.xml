@@ -7,6 +7,32 @@
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Week 1 Monday</title>
+        
+        
+          <description>&lt;p&gt;Been working on using common dependencies with multiple product flavors, failed. Refer to &lt;a href=&quot;http://stackoverflow.com/questions/28563632/common-code-for-different-android-flavors&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 11 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-1-Monday/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Monday/</guid>
+      </item>
+    
+      <item>
+        <title>Introduce of Piping</title>
+        
+        
+          <description>&lt;p&gt;When I first got my hand on Linux, I felt this is awesome(ok that’s bullshit, I HATED Linux). &lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 28 Mar 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/introduce-of-piping/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/introduce-of-piping/</guid>
+      </item>
+    
+      <item>
         <title>Introduce of Jujuj</title>
         
         
