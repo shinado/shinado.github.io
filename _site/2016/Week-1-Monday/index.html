@@ -37,25 +37,29 @@
     <section id="post-body">
         <p>Been working on using common dependencies with multiple product flavors, failed. Refer to <a href="http://stackoverflow.com/questions/28563632/common-code-for-different-android-flavors">this</a>.</p>
 
-<p>Speed up gradling by replacing 
-<code>
-compile 'com.google.android.gms:play-services:8.4.0'
-</code>
-with
-<code>
-compile 'com.google.android.gms:play-services-gcm:8.4.0'
-</code>
-since only GCM is required in my project.</p>
+<p>Speed up gradling by replacing </p>
 
-<p>Got a problem:
-<code>
-Error retrieving parent for item: No resource found that matches the given name after upgrading to AppCompat v23
-</code>
-Change the appcompat dependency to
-<code>
-compile 'com.android.support:appcompat-v7:22.2.1'
-</code>
-Refer to <a href="http://stackoverflow.com/questions/32075498/error-retrieving-parent-for-item-no-resource-found-that-matches-the-given-name">this</a></p>
+<pre><code>compile 'com.google.android.gms:play-services:8.4.0'
+</code></pre>
+
+<p>with</p>
+
+<pre><code>compile 'com.google.android.gms:play-services-gcm:8.4.0'
+</code></pre>
+
+<p>since only GCM is required in my project.</p>
+
+<p>Got a problem:</p>
+
+<pre><code>Error retrieving parent for item: No resource found that matches the given name after upgrading to AppCompat v23
+</code></pre>
+
+<p>Change the appcompat dependency to</p>
+
+<pre><code>compile 'com.android.support:appcompat-v7:22.2.1'
+</code></pre>
+
+<p>Refer to <a href="http://stackoverflow.com/questions/32075498/error-retrieving-parent-for-item-no-resource-found-that-matches-the-given-name">this</a></p>
 
     </section>
 </article>
