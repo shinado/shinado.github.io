@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dan’s world - Introduce of Jujuj</title>
+  <title>Dan’s world - Week 1 Tuesday</title>
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
@@ -31,45 +31,24 @@
   <section id="wrapper" class="">
     <article class="post">
     <header>
-        <h1>Introduce of Jujuj</h1>
-        <h2 class="headline">March 22, 2016</h2>
+        <h1>Week 1 Tuesday</h1>
+        <h2 class="headline">June 12, 2016</h2>
     </header>
     <section id="post-body">
-        <p><img src="https://cloud.githubusercontent.com/assets/3215337/13972466/f7fdb030-f0d3-11e5-9149-fe37ffc5ea44.png" width="300" /></p>
+        <p>The differences between compileSDKVersion and targetSDKVersion check <a href="http://stackoverflow.com/questions/26694108/what-is-the-difference-between-compilesdkversion-and-targetsdkversion">this</a></p>
 
-<p>Image you’re developing this application, two problems will come into your mind instantly(if not, just read on):</p>
+<p>In the Android permission system, the official doc says like <a href="https://developer.android.com/training/permissions/requesting.html">this</a>:</p>
 
-<ol>
-  <li>
-    <p>I need to pre-load and display what’s cached in the database, before retrieving data from the server and, whatever is loaded from server should be stored in the database.</p>
-  </li>
-  <li>
-    <p>These posts should only include the identity of the user whom they belong to. Users’ information(portrait, name, etc.) is supposed to be managed in a pool, so that whoever wants it can lazy-load it according to the identity, like ImageLoader</p>
-  </li>
-</ol>
+<blockquote>
+  <p>If the device is running Android 5.1 or lower, or your app’s target SDK is 22 or lower: If you list a dangerous permission in your manifest, the user has to grant the permission when they install the app; if they do not grant the permission, the system does not install the app at all.</p>
 
-<p>This is the very common scenery when developing applications that retrieve data from servers.</p>
+  <p>If the device is running Android 6.0 or higher, and your app’s target SDK is 23 or higher: The app has to list the permissions in the manifest, and it must request each dangerous permission it needs while the app is running. The user can grant or deny each permission, and the app can continue to run with limited capabilities even if the user denies a permission request.</p>
+</blockquote>
 
-<p>That’s why <code>Jujuj</code> is built, to make these things easier. With <code>Jujuj</code>, you do not need to worry about how data is managed, just use it like this:
-<code>
-Jujuj.getInstance().inject(this, new LoginRequest(this));
-</code></p>
+<p>How to handle Android touch events has always been a big problem for me. I believe <a href="https://developer.android.com/training/gestures/viewgroup.html">this site</a> has made it really clear.</p>
 
-<p><code>Jujuj</code> frees you from all the <code>findViewById</code>, <code>setText</code>, <code>setAdapter</code> whatsover by simply declaring which variable is supposed to be bind on which widget, like this:
-<code>
-@ViewInj   
-public String account;
-</code></p>
+<p>The very point of this is that make sure to return true in the child touch event so it means that “I am interested in this event so next time dispatch this to me ok?”. On the contrary, when it returns false in the touch event, which means “OK you know what, I’m not interested in the events so DO NOT dispatch those to me any more”. Nailed it.</p>
 
-<p>When you have a foreign key, for instance, user’s identity in the post object, just put it this way:
-<code>
-@DependentInj   
-public User user;
-</code></p>
-
-<p>and <code>Jujuj</code> will do all the magic.</p>
-
-<p>Wanna <a href="http://github.com/shinado/jujuj">try it</a> yourself?</p>
 
     </section>
 </article>
@@ -83,7 +62,7 @@ public User user;
     </a>
 
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http://shinado.github.io/2016/introduce-of-Jujuj/ - Introduce of Jujuj by @shinado023"><span class="icon-twitter"> Tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http://shinado.github.io/2016/Week-2-Tuesday/ - Week 1 Tuesday by @shinado023"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

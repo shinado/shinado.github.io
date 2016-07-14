@@ -41,11 +41,11 @@
   <p>java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState</p>
 </blockquote>
 
-<p>It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low. </p>
+<p>It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low.</p>
 
 <p>It won’t happen in every case cause most of the activities ain’t large enough to force system to shut them down. However, you can test it by setting ‘Don’t keep activities’ in Developer options. Once set, the system will force activities to shut them down when they’re invisible to users(like when you hit the home button, the system will shut this activity down, which triggles onSaveInstanceState()). Therefore, you may be able to test what is gonna happen when the system shuts activities down.</p>
 
-<p>Let’s go back to the problem. I have a thread to load data before fragment is created. Notice that when Activity is destroyed, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong. </p>
+<p>Let’s go back to the problem. I have a thread to load data before fragment is created. Notice that when Activity is destroyed, the thread is still running, as a result of which, it has a reference of this Activity. It still tries to add this fragment in this old Activity (which is supposed to be destroied). There it goes wrong.</p>
 
 <p>The code is simplified as follow:</p>
 
@@ -146,35 +146,6 @@ private void addFragment(boolean isNull){
 
 
 <!-- Archive post list -->
-
-    <ul id="post-list" class="archive readmore">
-        <h3>Read more</h3>
-        
-            <li>
-                <a href="/2016/Week-1-Monday/">Week 1 Monday<aside class="dates">Jun 11</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2016/introduce-of-piping/">Introduce of Piping<aside class="dates">Mar 28</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2016/introduce-of-Jujuj/">Introduce of Jujuj<aside class="dates">Mar 22</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2016/start-python/">Start Python<aside class="dates">Jan 02</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/android-annotation/">Pre-process in Android<aside class="dates">Dec 14</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/activity-killed-by-system/">Activity killed by system<aside class="dates">Oct 11</aside></a>
-            </li>
-        
-    </ul>
 
 
 

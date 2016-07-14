@@ -7,6 +7,32 @@
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Week 1 Wednesday</title>
+        
+        
+          <description>&lt;p&gt;Got a werid problem on Android Studio 2.1.2. When I tried to run my application, it throws string out of boundary exception and aborts builidng. Turned out it takes none-translating strings in strings.xml as an error when I use release variant.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 13 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-1-Wednesday/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Wednesday/</guid>
+      </item>
+    
+      <item>
+        <title>Week 1 Tuesday</title>
+        
+        
+          <description>&lt;p&gt;The differences between compileSDKVersion and targetSDKVersion check &lt;a href=&quot;http://stackoverflow.com/questions/26694108/what-is-the-difference-between-compilesdkversion-and-targetsdkversion&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 12 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-2-Tuesday/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-2-Tuesday/</guid>
+      </item>
+    
+      <item>
         <title>Week 1 Monday</title>
         
         
@@ -23,8 +49,7 @@
         <title>Introduce of Piping</title>
         
         
-          <description>&lt;p&gt;When I first got my hand on Linux, I felt this is awesome(ok that’s bullshit, I HATED Linux). &lt;/p&gt;
-
+          <description>&lt;p&gt;When I first got my hand on Linux, I felt this is awesome(ok that’s bullshit, I HATED Linux).&lt;/p&gt;
 </description>
         
         <pubDate>Mon, 28 Mar 2016 18:24:00 +0800</pubDate>
@@ -81,7 +106,7 @@
   &lt;p&gt;java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low. &lt;/p&gt;
+&lt;p&gt;It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low.&lt;/p&gt;
 
 </description>
         
