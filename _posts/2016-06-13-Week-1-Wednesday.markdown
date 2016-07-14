@@ -14,5 +14,5 @@ You can either switch to debug variant or put this code in build.gradle:
         abortOnError false
     }
 
-I've been using debug variant ever since but I got a problem as I switched to Android 2.1.4. The problem and the very solution, which turns me into using release variant is [here](http://nanashi07.blogspot.my/2016/04/problem-on-result-of-dexfileentries.html).
+I've been using debug variant ever since but I got a problem as I switched to Android 2.1.4. The problem and the very solution, which turns me into using release variant is [here](http://nanashi07.blogspot.my/2016/04/problem-on-result-of-dexfileentries.html). For more infomation about instant run, check this official post [here](https://developer.android.com/studio/run/index.html#instant-run)
 
