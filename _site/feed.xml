@@ -7,6 +7,60 @@
     <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Week 3 Friday</title>
+        
+        
+          <description>&lt;p&gt;Do use getChildFragmentManager for a ViewPager in a nested Fragment.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 28 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-3-Friday/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-3-Friday/</guid>
+      </item>
+    
+      <item>
+        <title>Week 3 Monday</title>
+        
+        
+          <description>&lt;p&gt;I’ve been using release variant as my&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 25 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-3-Monday/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-3-Monday/</guid>
+      </item>
+    
+      <item>
+        <title>Week 2 Thursday</title>
+        
+        
+          <description>&lt;p&gt;In some devices(or version?), the BootReceiver will triggle onCreate() method in Application. Go&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 21 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-2-Thursday-copy-2/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-2-Thursday-copy-2/</guid>
+      </item>
+    
+      <item>
+        <title>Week 1 Friday</title>
+        
+        
+          <description>&lt;p&gt;Got a problem using Gson:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Cannot make field constructor accessible
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Solved by adding this:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Jun 2016 18:24:00 +0800</pubDate>
+        <link>http://shinado.github.io/2016/Week-1-Friday/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Friday/</guid>
+      </item>
+    
+      <item>
         <title>Week 1 Thursday</title>
         
         
@@ -81,51 +135,6 @@
         <pubDate>Tue, 22 Mar 2016 18:24:00 +0800</pubDate>
         <link>http://shinado.github.io/2016/introduce-of-Jujuj/</link>
         <guid isPermaLink="true">http://shinado.github.io/2016/introduce-of-Jujuj/</guid>
-      </item>
-    
-      <item>
-        <title>Start Python</title>
-        
-        
-          <description>&lt;p&gt;When I was trying to install Scrapy I got this error:&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sat, 02 Jan 2016 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/start-python/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/start-python/</guid>
-      </item>
-    
-      <item>
-        <title>Pre-process in Android</title>
-        
-        
-          <description>&lt;p&gt;I’ve started building Jujuj with annotation. I want to make it as effecient as possible therefore I want to replace reflection with pre-process.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Mon, 14 Dec 2015 18:00:00 +0800</pubDate>
-        <link>http://shinado.github.io/2015/android-annotation/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/android-annotation/</guid>
-      </item>
-    
-      <item>
-        <title>Activity killed by system</title>
-        
-        
-          <description>&lt;p&gt;Recently I encounted with this exception with Fragment:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It turns out that somehow, when I launch this Activity, system kills it immediately and restart it again. This happens when the system memory is low.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sun, 11 Oct 2015 20:34:20 +0800</pubDate>
-        <link>http://shinado.github.io/2015/activity-killed-by-system/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2015/activity-killed-by-system/</guid>
       </item>
     
   </channel>
