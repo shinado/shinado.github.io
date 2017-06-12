@@ -10,7 +10,7 @@
         <title>Week 4 Thursday</title>
         
         
-          <description>&lt;p&gt;I’m so ashamed of myself that I wrote code like this and couldn’t figure out what went wrong.&lt;/p&gt;
+          <description>&lt;p&gt;I’m so ashamed of myself that I wrote code like this and couldn’t figure out what went wrong. &lt;/p&gt;
 
 </description>
         
@@ -24,6 +24,7 @@
         
         
           <description>&lt;p&gt;Do use getChildFragmentManager for a ViewPager in a nested Fragment.&lt;/p&gt;
+
 </description>
         
         <pubDate>Tue, 28 Jun 2016 18:24:00 +0800</pubDate>
@@ -35,7 +36,8 @@
         <title>Week 3 Monday</title>
         
         
-          <description>&lt;p&gt;I’ve been using release variant as my&lt;/p&gt;
+          <description>&lt;p&gt;I’ve been using release variant as my &lt;/p&gt;
+
 </description>
         
         <pubDate>Sat, 25 Jun 2016 18:24:00 +0800</pubDate>
@@ -48,18 +50,19 @@
         
         
           <description>&lt;p&gt;In some devices(or version?), the BootReceiver will triggle onCreate() method in Application. Go&lt;/p&gt;
+
 </description>
         
         <pubDate>Tue, 21 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-2-Thursday-copy-2/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-2-Thursday-copy-2/</guid>
+        <link>http://shinado.github.io/2016/Week-2-Thursday%20copy%202/</link>
+        <guid isPermaLink="true">http://shinado.github.io/2016/Week-2-Thursday%20copy%202/</guid>
       </item>
     
       <item>
         <title>Week 1 Friday</title>
         
         
-          <description>&lt;p&gt;Got a problem using Gson:&lt;/p&gt;
+          <description>&lt;p&gt;Got a problem using Gson: &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Cannot make field constructor accessible
 &lt;/code&gt;&lt;/pre&gt;
@@ -90,7 +93,7 @@
         <title>Week 1 Wednesday</title>
         
         
-          <description>&lt;p&gt;Got a werid problem on Android Studio 2.1.2. When I tried to run my application, it throws string out of boundary exception and aborts builidng. Turned out it takes none-translating strings in strings.xml as an error when I use release variant.&lt;/p&gt;
+          <description>&lt;p&gt;Got a werid problem on Android Studio 2.1.2. When I tried to run my application, it throws string out of boundary exception and aborts builidng. Turned out it takes none-translating strings in strings.xml as an error when I use release variant. &lt;/p&gt;
 
 </description>
         
@@ -129,7 +132,8 @@
         <title>Introduce of Piping</title>
         
         
-          <description>&lt;p&gt;When I first got my hand on Linux, I felt this is awesome(ok that’s bullshit, I HATED Linux).&lt;/p&gt;
+          <description>&lt;p&gt;When I first got my hand on Linux, I felt this is awesome(ok that’s bullshit, I HATED Linux). &lt;/p&gt;
+
 </description>
         
         <pubDate>Mon, 28 Mar 2016 18:24:00 +0800</pubDate>
