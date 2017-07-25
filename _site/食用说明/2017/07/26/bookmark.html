@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Aris Launcher" property="og:site_name">
 
-  <meta content="About" property="og:title">
+  <meta content="书签管理的使用" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,16 +16,25 @@
   <meta content="<h3>Hey guys, this is</h3><h1>Aris Launcher</h1><h3>The New Android Launcher</h3>" property="og:description">
 
 
-  <meta content="http://shinado.github.io/about/" property="og:url">
+  <meta content="http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark.html" property="og:url">
 
+
+  <meta content="2017-07-26T00:31:43+08:00" property="article:published_time">
+  <meta content="http://shinado.github.io/about/" property="article:author">
 
 
   <meta property="og:image" content="">
 
 
+  
+  <meta content="食用说明" property="article:section">
+  
 
-  <title>About</title>
-  <meta name="description" content="<h3>Hey guys, this is</h3><h1>Aris Launcher</h1><h3>The New Android Launcher</h3>">
+
+  
+
+  <title>书签管理的使用</title>
+  <meta name="description" content="书签管理">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -43,7 +52,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://shinado.github.io/about/">
+  <link rel="canonical" href="http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark.html">
   <link rel="alternate" type="application/rss+xml" title="Aris Launcher" href="http://shinado.github.io/feed.xml">
 </head>
 
@@ -105,100 +114,63 @@
 </section>
 
 <section>
-<div class="jumbotron">
-<div class="container">
-  <h1 class="post-title-main" itemprop="name headline">About</h1>
-<center>  <h4 class="post-title-main" itemprop="name headline"></h4></center>
-</div>
-</div>
-
-<div class="container page-stuff">
-
-  <div class="man-title">
-  UP AND RUNNING WITH DevJournal
-</div>
-<div class="manual manual-title">
-  Posting
-  </div>
-<p>  <div class="manual-content">
-
-      - Create a .markdown file inside <code class="highlighter-rouge">_posts</code> folder.<br />
-      - Name the file according to the format YY-MM-DD-[short name for your post].<br />
-      &nbsp;&nbsp;&nbsp;<code>2016-03-30-i-love-design.markdown</code><br />
-      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br /><br />
-      <div class="example">
-
-        <div class="highlight">
-        <pre>
-          ---
-          layout: post | default | page
-          title:  String<span class="hint"> Post Title</span>
-          date:   Time Stamp
-          categories: String | Array of Strings<span class="hint"> Category / Categories </span>
-          ---
-        </pre>
-        </div>
-
-      </div>
-      <div class="example">
-        <div class="highlight">
-        <pre>
-        ---
-        layout: post
-        title:  "The One with the Blackout"
-        date:   2016-03-30 19:45:31 +0530
-        categories: ["life", "friends"]
-        ---
-      </pre>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="post-title-main" itemprop="name headline">书签管理的使用</h1>
+      <p class="post-meta"><time datetime="2017-07-26T00:31:43+08:00" itemprop="datePublished">Jul 26, 2017</time></p>
+      
     </div>
-      </div>
-
-
-
 
 </div>
-<p><br /></p>
 
-  <div class="manual manual-title">
-  Create Pages
+
+  <div class="post-content container" itemprop="articleBody">
+    <h2 id="section">书签管理</h2>
+
+<p>书签管理插件可以让你把你需要的网页保存到Aris。这样你就可以直接在Aris上打开这个链接。使用的方法也很简单：</p>
+
+<pre><code>&lt;网址&gt;.wadd
+</code></pre>
+
+<p>需要注意的是，因为网址包含了.，而在Aris中点号是连接符。所以如果你输入</p>
+
+<pre><code>www.google.com.wadd
+</code></pre>
+
+<p>Aris不会完整地识别这个地址。当然，在大部分情况下，你也不会一个一个地址的输入，而是从浏览器复制网页地址，然后再使用</p>
+
+<pre><code>clipboard.wadd
+</code></pre>
+
+<p>即可。</p>
+
+<p>网页必须以http://或者https://开头，对于网址</p>
+
+<pre><code>http://www.google.com
+</code></pre>
+
+<p>会保存为google书签。需要打开这个链接时，只需要输入google即可。</p>
+
+<p>同时，你可以可以指定书签的搜索名称。例如</p>
+
+<pre><code>&lt;网址&gt;.wadd google
+</code></pre>
+
+<p>此时，不管网址是什么，你都可以通过google搜索到它。</p>
+
+<p>此外，你也可以批量导入多个书签，用英文的逗号(,)隔开即可。</p>
+
+<p>如果需要删除某个书签，使用</p>
+
+<pre><code>&lt;书签&gt;.wrm
+</code></pre>
+
+<p>即可。</p>
+
   </div>
-<p>  <div class="manual-content">
 
-      - Create a .md file in the root directory.<br />
-      - Name the file with the desired page link name.<br />
-        &nbsp;&nbsp;&nbsp;<code>about.md</code><br />
-          &nbsp;&nbsp;&nbsp;<code>design.md</code><br />
-      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br /><br />
-      <div class="highlight">
-
-
-        <pre>
-          ---
-          layout: page
-          title: String <span class="hint">Title of the webpage</span>
-          permalink: / String / <span class="hint">Permalink for the webpage</span>
-          tagline: String <span class="hint">Optional DevJournal Feature : Tagline for the page</span>
-          ---
-      </pre><br />
-    </div><br />
-      <div class="highlight">
-
-        <pre>
-        ---
-        layout: page
-        title:  "Science"
-        permalink:   /science/
-        tagline : "Humanity is overrated."
-        ---
-      </pre>
-      </div>
-
-
-  </div>
-</p>
-</p>
-
-</div>
+</article>
 
 </section>
 <nav class="navbar navbar-default navbar-fixed-bottom">

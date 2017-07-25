@@ -1,144 +1,463 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dan’s world</title>
-    <description>Stay young, stay simple</description>
-    <link>http://shinado.github.io</link>
-    <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Aris Launcher</title>
+    <description>&lt;h3&gt;Hey guys, this is&lt;/h3&gt;&lt;h1&gt;Aris Launcher&lt;/h1&gt;&lt;h3&gt;The New Android Launcher&lt;/h3&gt;</description>
+    <link>http://shinado.github.io/</link>
+    <atom:link href="http://shinado.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 25 Jul 2017 11:46:35 +0800</pubDate>
+    <lastBuildDate>Tue, 25 Jul 2017 11:46:35 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Week 4 Thursday</title>
-        
-        
-          <description>&lt;p&gt;I’m so ashamed of myself that I wrote code like this and couldn’t figure out what went wrong. &lt;/p&gt;
+        <title>Aris食用说明</title>
+        <description>&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
 
-</description>
-        
-        <pubDate>Mon, 04 Jul 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-4-Thursday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-4-Thursday/</guid>
-      </item>
-    
-      <item>
-        <title>Week 3 Friday</title>
-        
-        
-          <description>&lt;p&gt;Do use getChildFragmentManager for a ViewPager in a nested Fragment.&lt;/p&gt;
+&lt;p&gt;简单来说，Aris就是一个大部分操作都通过输入来完成的Android桌面。&lt;/p&gt;
 
-</description>
-        
-        <pubDate>Tue, 28 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-3-Friday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-3-Friday/</guid>
-      </item>
-    
-      <item>
-        <title>Week 3 Monday</title>
-        
-        
-          <description>&lt;p&gt;I’ve been using release variant as my &lt;/p&gt;
+&lt;p&gt;但是Aris不止如此。在Aris桌面，你可以连接各个不同的组件来实现原本复杂的操作。一个最简单的例子，如果你想把小明的手机号发生给小红，在一般情况下（后来锤子推出了一步的功能，如果你用的是锤子，我表示此操作无明显优势），你需要&lt;/p&gt;
 
-</description>
-        
-        <pubDate>Sat, 25 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-3-Monday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-3-Monday/</guid>
-      </item>
-    
-      <item>
-        <title>Week 2 Thursday</title>
-        
-        
-          <description>&lt;p&gt;In some devices(or version?), the BootReceiver will triggle onCreate() method in Application. Go&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;进入联系人app&lt;/li&gt;
+  &lt;li&gt;找到小红的号码&lt;/li&gt;
+  &lt;li&gt;复制&lt;/li&gt;
+  &lt;li&gt;返回&lt;/li&gt;
+  &lt;li&gt;找到小明的号码&lt;/li&gt;
+  &lt;li&gt;选择发送短信&lt;/li&gt;
+  &lt;li&gt;粘贴&lt;/li&gt;
+  &lt;li&gt;发送&lt;/li&gt;
+&lt;/ul&gt;
 
-</description>
-        
-        <pubDate>Tue, 21 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-2-Thursday%20copy%202/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-2-Thursday%20copy%202/</guid>
-      </item>
-    
-      <item>
-        <title>Week 1 Friday</title>
-        
-        
-          <description>&lt;p&gt;Got a problem using Gson: &lt;/p&gt;
+&lt;p&gt;而在Aris桌面，你只需要输入&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Cannot make field constructor accessible
+&lt;pre&gt;&lt;code&gt;xm.xh
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Solved by adding this:&lt;/p&gt;
+&lt;p&gt;并输入回车即可。请注意，你不需要输入完整的拼音或者首字母，只要你想要的结果在第一个位置以实心的方块出现（首选结果），即表示它是当前操作的对象。你既可以输入回车键以执行该结果，或者通过连接符(.)来连接其他组件。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;连接&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;在Linux中，可以通过管道(&lt;/td&gt;
+      &lt;td&gt;)来传递数据。Aris借鉴了管道的概念，实现了连接不同组件的功能。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;当你输入连接符(.)时，你的首选结果就会作为输入，等待接收输入的组件。依托于不同的插件，你可以方便地对你的手机进行操作。例如，APK插件（可以从插件商店下载）可以把你手机上的app导出为apk文件并进行分享。如果你想要把酷安的apk直接发送给QQ好友，你只需要这么做：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;kuan.apk.qq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;访问远程插件&lt;/h2&gt;
+
+&lt;p&gt;从1.0.7开始，你不需要在插件商店下载插件再执行。如果你需要某个插件商店的插件时，可以通过远程访问符($)来实现。例如，在没有下载APK插件的情况下，可以通过这个指令：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;kuan.$apk.qq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来直接获得APK插件并执行。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;文件管理&lt;/h2&gt;
+
+&lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
+
+&lt;p&gt;进入文件管理之后，你将处于SD卡的根路径下，你只会搜索到当前文件夹下的文件或文件夹，无法搜索到应用、联系人、或者其他插件。只有执行了某个文件或者使用exit指令才会退出。当你执行了某个文件夹，你会进入到该文件夹，也就是说，你只能搜索到该文件夹下的文件。&lt;/p&gt;
+
+&lt;p&gt;当你进入到某个文件夹时，输入区域的指示器会显示为该文件夹的名字。&lt;/p&gt;
+
+&lt;p&gt;在文件管理模式下，只有一种情况你会在不退出的情况下搜索到应用或者其他插件，那就是连接。你可以通过连接符把文件输出到其他的组件。输入连接符后，系统会启用其他插件的搜索功能，此时你可以搜索到其他组件。例如，在SD卡目录下，有一个文件的地址是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/download/wallpaper.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;把这个文件分享到QQ的指令为（分三次）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd
+download
+wallpaper.qq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你觉得这样有点麻烦，你可以使用一句指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd download/wallpaper.qq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;同时请记住，你不需要输入完整的文件或文件夹地址，当你需要的结果在第一个位置以实心的方块出现，你就可以按进行下一步操作。所以实际情况下，你的输入可能是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.qq  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在上面的例子中，当cd为首选结果时，输入空格就可以直接进入文件管理模式，不需要执行。需要注意的是，&lt;strong&gt;在文件管理模式下，不需要再输入cd来切换路径。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;如果文件是图片的话，你还可以连接到config，将该图片设置为桌面。以上面的例子来说，指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以将/download/wallpaper.png这个图片设置为壁纸。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;返回上一级&lt;/h3&gt;
+
+&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来返回上一级。请注意，返回上一级的组件显示名称为“cd..”。执行这个组件就可以返回上一级文件夹。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;显示所有文件或文件夹&lt;/h3&gt;
+
+&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来显示该文件夹下所有的文件或文件夹。&lt;/p&gt;
+
+&lt;p&gt;同时，在没有进入文件管理模式的情况下，你还可以通过&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls download
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来直接显示download文件夹下的所有文件或文件夹（尚未实现）。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;移动文件&lt;/h3&gt;
+&lt;p&gt;你可以通过连接符来进行文件的移动。以上面的例子来说，指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.images
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会把/download/wallpaper.png这个文件移动到/download/images文件夹中。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;删除文件&lt;/h3&gt;
+
+&lt;p&gt;你可以将任意文件或文件夹连接到指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来进删除。例如在前面的例子中，删除文件download/wallpaper.png可以使用指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来实现。&lt;/p&gt;
+
+&lt;p&gt;同时，你还可以配合startw和endw进行批量操作。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;highlight&quot;&gt;highlight插件&lt;/h2&gt;
+
+&lt;p&gt;hightlight插件用于对输入的文字进行有选择地高亮展示。常用于文件管理的ls指令。举例来说，你想要高亮显示根目录下任何带有apk文字的文件或文件夹，可以使用这个指令:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd
+ls.highlight apk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你还可以配合startw或者endw来进行操作。比如，在所有以apk结尾的文件或文件夹里，高亮aris字符:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd
+ls.endw apk.highlight aris
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
+
+&lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
+
+&lt;p&gt;批量导入的格式为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;,&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里的编号指的是config的设置编号。对于任何启动/关闭的设置，值只可为true或者false；对于文字大小，只支持数字输入；对于颜色，只支持hex色码；对于壁纸，只支持http协议的图片资源（但是有一个特例，当输入是一个本地图片时，直接设置为壁纸）。例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0:true,1:true,2:true,3:true,4:hello world,5:false,6:false,8:#123456,9#987654,a:12,b:execute.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当然，你可以只对单个设置进行操作，如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0:true.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;clipboard.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来批量应用配置。&lt;/p&gt;
+
+&lt;p&gt;你可以将你的配置导出到剪切板，使用指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.clipboard
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;内置插件简单介绍&lt;/h2&gt;
+
+&lt;p&gt;Aris内置了几个基本的插件。它们是：restart, clear, config, help. &lt;/p&gt;
+
+&lt;p&gt;restart用于重启app。遇到什么bug都可以重启一下。&lt;/p&gt;
+
+&lt;p&gt;clear是一个只执行插件，用于清除屏幕的显示。&lt;/p&gt;
+
+&lt;p&gt;config用于配置app。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;如果你对有些表述不了解…&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;指令&lt;/strong&gt;：在输入区域的输入，即为指令&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;参数&lt;/strong&gt;：对于指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a p
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;p称为a的参数。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;组件&lt;/strong&gt;：任何显示在结果区域的方块，即为组件。&lt;/p&gt;
+
+&lt;p&gt;结果集：对于不包含特殊符号的任意指令a，对应的所有搜索到的组件&lt;/p&gt;
+
+&lt;p&gt;首选结果：对于不包含特殊符号的任意指令a，对应的所有搜索到的组件的第一个，通常记为A&lt;/p&gt;
+
+&lt;p&gt;插件：Aris的可执行单位，组件的host。和组件的关系可能是一对一，或者一对多。举例来说，应用程序是一个插件，它包含了你系统中所有app所对应的组件，任意一个app都是一个组件；clear插件只包含了唯一一个组件，也就是clear本身。插件又可分为以下几类：&lt;/p&gt;
+
+&lt;p&gt;可搜索插件：包含多个组件的插件&lt;/p&gt;
+
+&lt;p&gt;单一执行插件：只包含一个组件的插件&lt;/p&gt;
+
+&lt;p&gt;全搜索插件：需要通过某个组件来启用搜索该插件的其他组件的插件。&lt;/p&gt;
+
+&lt;p&gt;执行：当你输入任意指令并输入了回车键，或者选择了某个组件时，我们称为执行该组件。&lt;/p&gt;
+
+&lt;p&gt;连接：对于任何形如a.b的指令，我们称为a和b的连接。其中，点号(.)为连接符。&lt;/p&gt;
+
+&lt;p&gt;输入：对于任何形如a.b的指令。假定指令a的首选指令搜索组件为A，指令b的首选指令搜索组件为B，A即为B的输入。&lt;/p&gt;
+
+&lt;p&gt;输出：在上一条件下，B为A的输出。&lt;/p&gt;
+
+&lt;p&gt;只执行插件：如果插件A不接收任何输入，称其为只执行插件&lt;/p&gt;
 
 </description>
+        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
+        <link>http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris.html</link>
+        <guid isPermaLink="true">http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris.html</guid>
         
-        <pubDate>Wed, 15 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-1-Friday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Friday/</guid>
+        
+        <category>食用说明</category>
+        
       </item>
     
       <item>
-        <title>Week 1 Thursday</title>
-        
-        
-          <description>&lt;p&gt;To move the git repository to a new location, use&lt;/p&gt;
+        <title>config的使用</title>
+        <description>&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
 
+&lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
+
+&lt;p&gt;批量导入的格式为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;,&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里的编号指的是config的设置编号。对于任何启动/关闭的设置，值只可为true或者false；对于文字大小，只支持数字输入；对于颜色，只支持hex色码；对于壁纸和文字，只支持http协议的地址。例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0:true,1:true,2:true,3:true,4:helloworld,5:false,6:false,8:#123456,9#987654,a:12,b:execute.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当配合文件管理功能使用时，你只需要通过连接符输入到config中，也就是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;文件&amp;gt;.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个命令就会自动地根据文件的格式来进行设置。例如，当输入是一个本地图片时，直接设置为壁纸；如果输入是一个本地的字体文件，则直接设置为Aris的字体。&lt;/p&gt;
+
+&lt;p&gt;当然，你可以只对单个设置进行操作。  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0:true.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;clipboard.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来批量应用配置。&lt;/p&gt;
+
+&lt;p&gt;你可以将你的配置导出到剪切板，使用指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.clipboard
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。&lt;/p&gt;
 </description>
+        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
+        <link>http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config.html</link>
+        <guid isPermaLink="true">http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config.html</guid>
         
-        <pubDate>Tue, 14 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-1-Thursday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Thursday/</guid>
+        
+        <category>食用说明</category>
+        
       </item>
     
       <item>
-        <title>Week 1 Wednesday</title>
-        
-        
-          <description>&lt;p&gt;Got a werid problem on Android Studio 2.1.2. When I tried to run my application, it throws string out of boundary exception and aborts builidng. Turned out it takes none-translating strings in strings.xml as an error when I use release variant. &lt;/p&gt;
+        <title>文件管理的使用</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;文件管理&lt;/h2&gt;
+
+&lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
+
+&lt;p&gt;进入文件管理之后，你将处于SD卡的根路径下，你只会搜索到当前文件夹下的文件或文件夹，无法搜索到应用、联系人、或者其他插件。只有执行了某个文件或者使用exit指令才会退出。当你执行了某个文件夹，你会进入到该文件夹，也就是说，你只能搜索到该文件夹下的文件。&lt;/p&gt;
+
+&lt;p&gt;当你进入到某个文件夹时，输入区域的指示器会显示为该文件夹的名字。&lt;/p&gt;
+
+&lt;p&gt;在文件管理模式下，只有一种情况你会在不退出的情况下搜索到应用或者其他插件，那就是连接。你可以通过连接符把文件输出到其他的组件。输入连接符后，系统会启用其他插件的搜索功能，此时你可以搜索到其他组件。例如，在SD卡目录下，有一个文件的地址是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/download/wallpaper.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;把这个文件分享到QQ的指令为（分三次）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd
+download
+wallpaper.qq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你觉得这样有点麻烦，你可以使用一句指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd download/wallpaper.qq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;同时请记住，你不需要输入完整的文件或文件夹地址，当你需要的结果在第一个位置以实心的方块出现，你就可以按进行下一步操作。所以实际情况下，你的输入可能是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.qq  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在上面的例子中，当cd为首选结果时，输入空格就可以直接进入文件管理模式，不需要执行。需要注意的是，&lt;strong&gt;在文件管理模式下，不需要再输入cd来切换路径。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;如果文件是图片的话，你还可以连接到config，将该图片设置为桌面。以上面的例子来说，指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以将/download/wallpaper.png这个图片设置为壁纸。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;返回上一级&lt;/h3&gt;
+
+&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来返回上一级。请注意，返回上一级的组件显示名称为“cd..”。执行这个组件就可以返回上一级文件夹。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;显示所有文件或文件夹&lt;/h3&gt;
+
+&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来显示该文件夹下所有的文件或文件夹。&lt;/p&gt;
+
+&lt;p&gt;同时，在没有进入文件管理模式的情况下，你还可以通过&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls download
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来直接显示download文件夹下的所有文件或文件夹（尚未实现）。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;移动文件&lt;/h3&gt;
+&lt;p&gt;你可以通过连接符来进行文件的移动。以上面的例子来说，指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.images
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会把/download/wallpaper.png这个文件移动到/download/images文件夹中。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;删除文件&lt;/h3&gt;
+
+&lt;p&gt;你可以将任意文件或文件夹连接到指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来进删除。例如在前面的例子中，删除文件download/wallpaper.png可以使用指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd do/w.rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来实现。&lt;/p&gt;
+
+&lt;p&gt;同时，你还可以配合startw和endw进行批量操作。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
+&lt;/code&gt;&lt;/pre&gt;
 
 </description>
+        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
+        <link>http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd.html</link>
+        <guid isPermaLink="true">http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd.html</guid>
         
-        <pubDate>Mon, 13 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-1-Wednesday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Wednesday/</guid>
+        
+        <category>食用说明</category>
+        
       </item>
     
       <item>
-        <title>Week 1 Tuesday</title>
-        
-        
-          <description>&lt;p&gt;The differences between compileSDKVersion and targetSDKVersion check &lt;a href=&quot;http://stackoverflow.com/questions/26694108/what-is-the-difference-between-compilesdkversion-and-targetsdkversion&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+        <title>书签管理的使用</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;书签管理&lt;/h2&gt;
 
-</description>
-        
-        <pubDate>Sun, 12 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-2-Tuesday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-2-Tuesday/</guid>
-      </item>
-    
-      <item>
-        <title>Week 1 Monday</title>
-        
-        
-          <description>&lt;p&gt;Been working on using common dependencies with multiple product flavors, failed. Refer to &lt;a href=&quot;http://stackoverflow.com/questions/28563632/common-code-for-different-android-flavors&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;书签管理插件可以让你把你需要的网页保存到Aris。这样你就可以直接在Aris上打开这个链接。使用的方法也很简单：&lt;/p&gt;
 
-</description>
-        
-        <pubDate>Sat, 11 Jun 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/Week-1-Monday/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/Week-1-Monday/</guid>
-      </item>
-    
-      <item>
-        <title>Introduce of Piping</title>
-        
-        
-          <description>&lt;p&gt;When I first got my hand on Linux, I felt this is awesome(ok that’s bullshit, I HATED Linux). &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;网址&amp;gt;.wadd
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;需要注意的是，因为网址包含了.，而在Aris中点号是连接符。所以如果你输入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;www.google.com.wadd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aris不会完整地识别这个地址。当然，在大部分情况下，你也不会一个一个地址的输入，而是从浏览器复制网页地址，然后再使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;clipboard.wadd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;即可。&lt;/p&gt;
+
+&lt;p&gt;网页必须以http://或者https://开头，对于网址&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.google.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会保存为google书签。需要打开这个链接时，只需要输入google即可。&lt;/p&gt;
+
+&lt;p&gt;同时，你可以可以指定书签的搜索名称。例如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;网址&amp;gt;.wadd google
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;此时，不管网址是什么，你都可以通过google搜索到它。&lt;/p&gt;
+
+&lt;p&gt;此外，你也可以批量导入多个书签，用英文的逗号(,)隔开即可。&lt;/p&gt;
+
+&lt;p&gt;如果需要删除某个书签，使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;书签&amp;gt;.wrm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;即可。&lt;/p&gt;
 </description>
+        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
+        <link>http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark.html</link>
+        <guid isPermaLink="true">http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark.html</guid>
         
-        <pubDate>Mon, 28 Mar 2016 18:24:00 +0800</pubDate>
-        <link>http://shinado.github.io/2016/introduce-of-piping/</link>
-        <guid isPermaLink="true">http://shinado.github.io/2016/introduce-of-piping/</guid>
+        
+        <category>食用说明</category>
+        
       </item>
     
   </channel>

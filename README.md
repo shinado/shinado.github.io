@@ -1,53 +1,88 @@
-# Cactus Theme for Jekyll
+If there's any issue you are facing in setting up DevJournal theme, I'm there for you. Just create an issue in this repository (http://github.com/hemangsk/DevJournal), (https://help.github.com/articles/creating-an-issue/) and I'll get back to you asap. :smile: :+1:<br>
 
-This is a port of [Cactus](https://github.com/koenbok/Cactus)'s default theme for Jekyll.
-Feel free to fork, change, modify and re-use it.
+![alt-tag](https://farm8.staticflickr.com/7062/26385542743_1c7e6b8d9e_o.png) 
 
-## How to use it
-
-Simply clone this repository, and then run `jekyll serve` inside the directory.
-This theme is fully compliant with GH Pages and their dependencies.
-For extra info: [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/#keeping-jekyll-up-to-date).
-
-Cactus theme includes:
-
-* Pagination
-* Rss feed
-* Google Analytics Tracking code
-* Code Syntax Highlight
-* Author's profile with picture header
-* Twitter/Facebook share buttons
-* Archive posts list under each post
-* Disqus comments
-
-## Screenshots
-
-![index page](https://raw.githubusercontent.com/nickbalestra/kactus/master/assets/images/Kactus-theme-index.png)
-![post page](https://raw.githubusercontent.com/nickbalestra/kactus/master/assets/images/Kactus-theme-post.png)
+![alt-tag](https://farm8.staticflickr.com/7320/26385629583_eac6861c48_o.png)
 
 
-## Thanks
-Most of the work has been already done by the [Cactus for mac authors](https://github.com/koenbok/Cactus/blob/master/AUTHORS), I've just ported their default theme to Jekyll.
-I've also added few things specific to Jekyll and some minor style changes.
+![alt-tag](https://farm8.staticflickr.com/7300/26895705412_d6365b9a14_o.png)
 
-## Copyright & License
 
-Copyright (c) 2015 [Cactus Authors](https://github.com/koenbok/Cactus/blob/master/AUTHORS) -  Released under the MIT License.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+![alt-tag](https://farm8.staticflickr.com/7370/26956762406_cbfa7a2139_o.png)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+#### To create a new post :sunglasses:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- Create a .markdown file inside _posts folder.
+- Name the file according to the standard jekyll format.
+```
+   2016-03-30-i-love-design.markdown
+```
+- Write the Front Matter and content in the file.
+    ```
+          ---
+          layout: post | default | page
+          title:  String Post Title
+          date:   Time Stamp
+          categories: String | Array of Strings Category / Categories 
+          ---
+    ```
+    
+    ```
+        ---
+        layout: post
+        title:  "The One with the Blackout"
+        date:   2016-03-30 19:45:31 +0530
+        categories: ["life", "friends"]
+        ---
+    ```  
+
+
+![alt-tag](https://farm8.staticflickr.com/7660/26895189602_170af0a783_o.png)
+![alt-tag](https://farm8.staticflickr.com/7594/26385450183_37116c6d32_o.png)
+
+
+####Create new pages, such a breeze! :smile:
+- Create a .md file in the root directory.
+- Name the file with the desired page link name.
+```
+   about.md
+```
+```
+   design.md
+```
+- Write the Front Matter and content in the file.
+```
+          ---
+          layout: page
+          title: String Title of the webpage
+          permalink: / String / Permalink for the webpage
+          tagline: String Optional DevJournal Feature : Tagline for the page
+          ---
+```      
+```
+        ---
+        layout: page
+        title:  "Science"
+        permalink:   /science/
+        tagline : "Humanity is overrated."
+        ---
+```      
+
+![alt-tag](https://farm8.staticflickr.com/7124/26895188812_65218d8652_o.png)
+
+
+That's all folks.
+
+>Super Flexible, Minimal, Text Based jekyll theme for the kickass geek :sunglasses:
+
+####It'd be really cool if you,<br>
+1.  Create some new feature and would like to integrate in DevJournal. Pull requests are most invited.
+2.  Open issues if you find bugs.
+3.  Just so you know, the license type is MIT.
+
+
+>Its' all about being community driven.  :bus: :bus: :dash:
+
+Have a great day!  :smile: :smile: :smiley:
+

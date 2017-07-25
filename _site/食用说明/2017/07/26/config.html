@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Aris Launcher" property="og:site_name">
 
-  <meta content="About" property="og:title">
+  <meta content="config的使用" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,16 +16,25 @@
   <meta content="<h3>Hey guys, this is</h3><h1>Aris Launcher</h1><h3>The New Android Launcher</h3>" property="og:description">
 
 
-  <meta content="http://shinado.github.io/about/" property="og:url">
+  <meta content="http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config.html" property="og:url">
 
+
+  <meta content="2017-07-26T00:31:43+08:00" property="article:published_time">
+  <meta content="http://shinado.github.io/about/" property="article:author">
 
 
   <meta property="og:image" content="">
 
 
+  
+  <meta content="食用说明" property="article:section">
+  
 
-  <title>About</title>
-  <meta name="description" content="<h3>Hey guys, this is</h3><h1>Aris Launcher</h1><h3>The New Android Launcher</h3>">
+
+  
+
+  <title>config的使用</title>
+  <meta name="description" content="config详细介绍">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -43,7 +52,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://shinado.github.io/about/">
+  <link rel="canonical" href="http://shinado.github.io/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config.html">
   <link rel="alternate" type="application/rss+xml" title="Aris Launcher" href="http://shinado.github.io/feed.xml">
 </head>
 
@@ -105,100 +114,61 @@
 </section>
 
 <section>
-<div class="jumbotron">
-<div class="container">
-  <h1 class="post-title-main" itemprop="name headline">About</h1>
-<center>  <h4 class="post-title-main" itemprop="name headline"></h4></center>
-</div>
-</div>
-
-<div class="container page-stuff">
-
-  <div class="man-title">
-  UP AND RUNNING WITH DevJournal
-</div>
-<div class="manual manual-title">
-  Posting
-  </div>
-<p>  <div class="manual-content">
-
-      - Create a .markdown file inside <code class="highlighter-rouge">_posts</code> folder.<br />
-      - Name the file according to the format YY-MM-DD-[short name for your post].<br />
-      &nbsp;&nbsp;&nbsp;<code>2016-03-30-i-love-design.markdown</code><br />
-      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br /><br />
-      <div class="example">
-
-        <div class="highlight">
-        <pre>
-          ---
-          layout: post | default | page
-          title:  String<span class="hint"> Post Title</span>
-          date:   Time Stamp
-          categories: String | Array of Strings<span class="hint"> Category / Categories </span>
-          ---
-        </pre>
-        </div>
-
-      </div>
-      <div class="example">
-        <div class="highlight">
-        <pre>
-        ---
-        layout: post
-        title:  "The One with the Blackout"
-        date:   2016-03-30 19:45:31 +0530
-        categories: ["life", "friends"]
-        ---
-      </pre>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="post-title-main" itemprop="name headline">config的使用</h1>
+      <p class="post-meta"><time datetime="2017-07-26T00:31:43+08:00" itemprop="datePublished">Jul 26, 2017</time></p>
+      
     </div>
-      </div>
-
-
-
 
 </div>
-<p><br /></p>
 
-  <div class="manual manual-title">
-  Create Pages
+
+  <div class="post-content container" itemprop="articleBody">
+    <h2 id="config">config详细介绍</h2>
+
+<p>config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。</p>
+
+<p>批量导入的格式为：</p>
+
+<pre><code>&lt;编号&gt;:&lt;值&gt;,&lt;编号&gt;:&lt;值&gt;.config
+</code></pre>
+
+<p>这里的编号指的是config的设置编号。对于任何启动/关闭的设置，值只可为true或者false；对于文字大小，只支持数字输入；对于颜色，只支持hex色码；对于壁纸和文字，只支持http协议的地址。例如：</p>
+
+<pre><code>0:true,1:true,2:true,3:true,4:helloworld,5:false,6:false,8:#123456,9#987654,a:12,b:execute.config
+</code></pre>
+
+<p>当配合文件管理功能使用时，你只需要通过连接符输入到config中，也就是</p>
+
+<pre><code>&lt;文件&gt;.config
+</code></pre>
+
+<p>这个命令就会自动地根据文件的格式来进行设置。例如，当输入是一个本地图片时，直接设置为壁纸；如果输入是一个本地的字体文件，则直接设置为Aris的字体。</p>
+
+<p>当然，你可以只对单个设置进行操作。  </p>
+
+<pre><code>0:true.config
+</code></pre>
+
+<p>再当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过</p>
+
+<pre><code>clipboard.config
+</code></pre>
+
+<p>来批量应用配置。</p>
+
+<p>你可以将你的配置导出到剪切板，使用指令</p>
+
+<pre><code>config.clipboard
+</code></pre>
+
+<p>如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。</p>
+
   </div>
-<p>  <div class="manual-content">
 
-      - Create a .md file in the root directory.<br />
-      - Name the file with the desired page link name.<br />
-        &nbsp;&nbsp;&nbsp;<code>about.md</code><br />
-          &nbsp;&nbsp;&nbsp;<code>design.md</code><br />
-      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br /><br />
-      <div class="highlight">
-
-
-        <pre>
-          ---
-          layout: page
-          title: String <span class="hint">Title of the webpage</span>
-          permalink: / String / <span class="hint">Permalink for the webpage</span>
-          tagline: String <span class="hint">Optional DevJournal Feature : Tagline for the page</span>
-          ---
-      </pre><br />
-    </div><br />
-      <div class="highlight">
-
-        <pre>
-        ---
-        layout: page
-        title:  "Science"
-        permalink:   /science/
-        tagline : "Humanity is overrated."
-        ---
-      </pre>
-      </div>
-
-
-  </div>
-</p>
-</p>
-
-</div>
+</article>
 
 </section>
 <nav class="navbar navbar-default navbar-fixed-bottom">

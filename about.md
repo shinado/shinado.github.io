@@ -1,30 +1,87 @@
 ---
+layout: page
 title: About
-permalink: about/
-profile: true
+permalink: /about/
 ---
+<div class="man-title">
+  UP AND RUNNING WITH DevJournal
+</div>
+<div class="manual manual-title">
+  Posting
+  </div>
+<p>  <div class="manual-content">
 
-Indepedent developer, highly experinced in Android, practicing in iOS. 
+      - Create a .markdown file inside <code class="highlighter-rouge">_posts</code> folder.<br />
+      - Name the file according to the format YY-MM-DD-[short name for your post].<br />
+      &nbsp;&nbsp;&nbsp;<code>2016-03-30-i-love-design.markdown</code><br />
+      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br><br>
+      <div class="example">
 
-You can check my [studio] to see what I've released, or fork me on [GitHub]. 
+        <div class="highlight">
+        <pre>
+          ---
+          layout: post | default | page
+          title:  String<span class="hint"> Post Title</span>
+          date:   Time Stamp
+          categories: String | Array of Strings<span class="hint"> Category / Categories </span>
+          ---
+        </pre>
+        </div>
 
-If you like me, read my [diary] to see what's going on everyday. 
+      </div>
+      <div class="example">
+        <div class="highlight">
+        <pre>
+        ---
+        layout: post
+        title:  "The One with the Blackout"
+        date:   2016-03-30 19:45:31 +0530
+        categories: ["life", "friends"]
+        ---
+      </pre>
+    </div>
+      </div>
 
-I'm also the author to two books. Check [here](http://item.jd.com/11037613.html) and [here](http://item.jd.com/11544524.html) but do not buy them cause they are shitty. 
 
-I make [resumes], occationaly, for myself or my clients(If you want to make a nice resume, please do [contact me]). 
 
-If you want to offer me a job, please [contact me].
+</p>
+</div>
+<p><br /></p>
 
-I travel around and take [photos] with my Korean girlfriend(who majors in Indonesian/Malaysian ,so if you have a job in China or Malaysia to offer her, please also [contact me]). 
+  <div class="manual manual-title">
+  Create Pages
+  </div>
+<p>  <div class="manual-content">
 
-Anyway, [contact me].
+      - Create a .md file in the root directory.<br />
+      - Name the file with the desired page link name.<br />
+        &nbsp;&nbsp;&nbsp;<code>about.md</code><br />
+          &nbsp;&nbsp;&nbsp;<code>design.md</code><br />
+      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br><br>
+      <div class="highlight">
 
-[contact me]: mailto:shinado023@gmail.com
-[studio]: http://mocaa.applinzi.com
-[GitHub]: http://github.com/shinado
-[diary]: http://1.yilaunch.sinaapp.com/diary/diary.php
-[resumes]: http://danresume.lofter.com
-[photos]: http://danist.lofter.com
 
-{% include footer.html %}
+        <pre>
+          ---
+          layout: page
+          title: String <span class="hint">Title of the webpage</span>
+          permalink: / String / <span class="hint">Permalink for the webpage</span>
+          tagline: String <span class="hint">Optional DevJournal Feature : Tagline for the page</span>
+          ---
+      </pre><br />
+    </div><br>
+      <div class="highlight">
+
+        <pre>
+        ---
+        layout: page
+        title:  "Science"
+        permalink:   /science/
+        tagline : "Humanity is overrated."
+        ---
+      </pre>
+      </div>
+
+
+  </div>
+</p>
