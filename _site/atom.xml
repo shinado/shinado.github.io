@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Aris Launcher</title>
-    <description></description>
-    <link>http://www.arislauncher.com//</link>
-    <atom:link href="http://www.arislauncher.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Jul 2017 22:31:47 +0800</pubDate>
-    <lastBuildDate>Wed, 26 Jul 2017 22:31:47 +0800</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>字符匹配的使用</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Aris Launcher</title>
+ <link href="http://www.arislauncher.com/atom.xml" rel="self"/>
+ <link href="http://www.arislauncher.com/"/>
+ <updated>2017-07-26T22:31:47+08:00</updated>
+ <id>http://www.arislauncher.com</id>
+ <author>
+   <name>Daniel Ng</name>
+   <email>shinado023@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>字符匹配的使用</title>
+   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/"/>
+   <updated>2017-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string</id>
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
 
 &lt;p&gt;从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：&lt;/p&gt;
 
@@ -48,19 +54,15 @@ item.jpg
 
 &lt;p&gt;就可以设置Aris桌面的字体了。&lt;/p&gt;
 
-</description>
-        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/</guid>
-        
-        
-        <category>食用说明</category>
-        
-      </item>
-    
-      <item>
-        <title>Aris食用说明</title>
-        <description>&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Aris食用说明</title>
+   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/"/>
+   <updated>2017-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris</id>
+   <content type="html">&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
 
 &lt;p&gt;简单来说，Aris就是一个大部分操作都通过输入来完成的Android桌面。&lt;/p&gt;
 
@@ -292,19 +294,15 @@ ls.endw apk.highlight aris
 
 &lt;p&gt;只执行插件：如果插件A不接收任何输入，称其为只执行插件&lt;/p&gt;
 
-</description>
-        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/</guid>
-        
-        
-        <category>食用说明</category>
-        
-      </item>
-    
-      <item>
-        <title>config的使用</title>
-        <description>&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>config的使用</title>
+   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/"/>
+   <updated>2017-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config</id>
+   <content type="html">&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
 
 &lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
 
@@ -343,19 +341,15 @@ ls.endw apk.highlight aris
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/</guid>
-        
-        
-        <category>食用说明</category>
-        
-      </item>
-    
-      <item>
-        <title>文件管理的使用</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;文件管理&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>文件管理的使用</title>
+   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/"/>
+   <updated>2017-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd</id>
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;文件管理&lt;/h2&gt;
 
 &lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
 
@@ -446,19 +440,15 @@ wallpaper.qq
 &lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
 &lt;/code&gt;&lt;/pre&gt;
 
-</description>
-        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/</guid>
-        
-        
-        <category>食用说明</category>
-        
-      </item>
-    
-      <item>
-        <title>书签管理的使用</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;书签管理&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>书签管理的使用</title>
+   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/"/>
+   <updated>2017-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark</id>
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;书签管理&lt;/h2&gt;
 
 &lt;p&gt;书签管理插件可以让你把你需要的网页保存到Aris。这样你就可以直接在Aris上打开这个链接。使用的方法也很简单：&lt;/p&gt;
 
@@ -499,15 +489,8 @@ wallpaper.qq
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;即可。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/</guid>
-        
-        
-        <category>食用说明</category>
-        
-      </item>
-    
-  </channel>
-</rss>
+</content>
+ </entry>
+ 
+
+</feed>

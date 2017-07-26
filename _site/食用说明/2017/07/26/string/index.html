@@ -11,7 +11,7 @@
 
   <title>
     
-      Download &middot; Aris Launcher
+      字符匹配的使用 &middot; Aris Launcher
     
   </title>
 
@@ -87,7 +87,7 @@
     
       
         
-          <a class="sidebar-nav-item active" href="/download/">Download</a>
+          <a class="sidebar-nav-item" href="/download/">Download</a>
         
       
     
@@ -119,10 +119,110 @@
       </div>
 
       <div class="container content">
-        <div class="page">
-  <h1 class="page-title">Download</h1>
-  <p>Get Aris in <a href="https://www.coolapk.com/apk/shinado.indi.piping">CoolApk</a> or <a href="https://play.google.com/store/apps/details?id=shinado.indi.piping">Play Store</a></p>
+        <div class="post">
+  <h1 class="post-title">字符匹配的使用</h1>
+  <span class="post-date">26 Jul 2017</span>
+  <h2 id="section">字符匹配</h2>
 
+<p>从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：</p>
+
+<pre><code>&lt;输入&gt;.startw &lt;字符&gt;
+&lt;输入&gt;.endw &lt;字符&gt;
+</code></pre>
+
+<p>这两个指令分别可以筛选出输入中以<字符>开头/结尾的每一行。例如，如果剪切板里的文字是</字符></p>
+
+<pre><code>wallpaper.png
+aris.apk
+item.jpg
+</code></pre>
+
+<p>那么这个命令</p>
+
+<pre><code>clipboard.endw apk
+</code></pre>
+
+<p>就会输出</p>
+
+<pre><code>aris.apk
+</code></pre>
+
+<p>字符匹配可以配合文件管理使用。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：</p>
+
+<pre><code>cd download.endw gif.rm
+</code></pre>
+
+<p>或者你知道在download文件夹下有一个ttf的字体文件，那么这个指令</p>
+
+<pre><code>cd download.endw ttf.config
+</code></pre>
+
+<p>就可以设置Aris桌面的字体了。</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/">
+            Aris食用说明
+            <small>26 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/">
+            config的使用
+            <small>26 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/">
+            文件管理的使用
+            <small>26 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<div class="comments">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'h';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'h';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
 </div>
 

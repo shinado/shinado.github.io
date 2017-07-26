@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      文件管理的使用 &middot; Aris Launcher
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/naringu.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/form.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="./public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="Mozilla RSS" href="feed.category.xml">
+  </head>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48740529-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<body class="theme-6dd">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+      <img width="125" height="125" alt="A photo of ariestiyansyah" src="/images/head.jpeg">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/categories/">Category Index</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/download/">Download</a>
+        
+      
+    
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="http://github.com">GitHub project</a>
+    <span class="sidebar-nav-item">Version 2.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2017. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Aris Launcher</a>
+            <small>‘The New Android Launcher’</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">文件管理的使用</h1>
+  <span class="post-date">26 Jul 2017</span>
+  <h2 id="section">文件管理</h2>
+
+<p>文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。</p>
+
+<p>进入文件管理之后，你将处于SD卡的根路径下，你只会搜索到当前文件夹下的文件或文件夹，无法搜索到应用、联系人、或者其他插件。只有执行了某个文件或者使用exit指令才会退出。当你执行了某个文件夹，你会进入到该文件夹，也就是说，你只能搜索到该文件夹下的文件。</p>
+
+<p>当你进入到某个文件夹时，输入区域的指示器会显示为该文件夹的名字。</p>
+
+<p>在文件管理模式下，只有一种情况你会在不退出的情况下搜索到应用或者其他插件，那就是连接。你可以通过连接符把文件输出到其他的组件。输入连接符后，系统会启用其他插件的搜索功能，此时你可以搜索到其他组件。例如，在SD卡目录下，有一个文件的地址是</p>
+
+<pre><code>/download/wallpaper.png
+</code></pre>
+
+<p>把这个文件分享到QQ的指令为（分三次）</p>
+
+<pre><code>cd
+download
+wallpaper.qq
+</code></pre>
+
+<p>如果你觉得这样有点麻烦，你可以使用一句指令</p>
+
+<pre><code>cd download/wallpaper.qq
+</code></pre>
+
+<p>同时请记住，你不需要输入完整的文件或文件夹地址，当你需要的结果在第一个位置以实心的方块出现，你就可以按进行下一步操作。所以实际情况下，你的输入可能是</p>
+
+<pre><code>cd do/w.qq  
+</code></pre>
+
+<p>在上面的例子中，当cd为首选结果时，输入空格就可以直接进入文件管理模式，不需要执行。需要注意的是，<strong>在文件管理模式下，不需要再输入cd来切换路径。</strong></p>
+
+<p>如果文件是图片的话，你还可以连接到config，将该图片设置为桌面。以上面的例子来说，指令</p>
+
+<pre><code>cd do/w.config
+</code></pre>
+
+<p>可以将/download/wallpaper.png这个图片设置为壁纸。</p>
+
+<h3 id="section-1">返回上一级</h3>
+
+<p>在文件管理模式下，你可以使用</p>
+
+<pre><code>cd
+</code></pre>
+
+<p>来返回上一级。请注意，返回上一级的组件显示名称为“cd..”。执行这个组件就可以返回上一级文件夹。</p>
+
+<h3 id="section-2">显示所有文件或文件夹</h3>
+
+<p>在文件管理模式下，你可以使用</p>
+
+<pre><code>ls
+</code></pre>
+
+<p>来显示该文件夹下所有的文件或文件夹。</p>
+
+<p>同时，在没有进入文件管理模式的情况下，你还可以通过</p>
+
+<pre><code>ls download
+</code></pre>
+
+<p>来直接显示download文件夹下的所有文件或文件夹（尚未实现）。</p>
+
+<h3 id="section-3">移动文件</h3>
+<p>你可以通过连接符来进行文件的移动。以上面的例子来说，指令</p>
+
+<pre><code>cd do/w.images
+</code></pre>
+
+<p>会把/download/wallpaper.png这个文件移动到/download/images文件夹中。</p>
+
+<h3 id="section-4">删除文件</h3>
+
+<p>你可以将任意文件或文件夹连接到指令</p>
+
+<pre><code>rm
+</code></pre>
+
+<p>来进删除。例如在前面的例子中，删除文件download/wallpaper.png可以使用指令</p>
+
+<pre><code>cd do/w.rm
+</code></pre>
+
+<p>来实现。</p>
+
+<p>同时，你还可以配合startw和endw进行批量操作。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：</p>
+
+<pre><code>cd download.endw gif.rm
+</code></pre>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/">
+            字符匹配的使用
+            <small>26 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/">
+            Aris食用说明
+            <small>26 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/">
+            config的使用
+            <small>26 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<div class="comments">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'h';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'h';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+    <div align="center" class="footer">
+        <a href="https://github.com/ariestiyansyah/naringu" target="_blank" title="naringu">Naringu</a>  is designed by Rizky Ariestiyansyah<br />Copyright © 2017 <br>
+    </div>
+  </body>
+</html>
+

@@ -1,88 +1,88 @@
-If there's any issue you are facing in setting up DevJournal theme, I'm there for you. Just create an issue in this repository (http://github.com/hemangsk/DevJournal), (https://help.github.com/articles/creating-an-issue/) and I'll get back to you asap. :smile: :+1:<br>
-
-![alt-tag](https://farm8.staticflickr.com/7062/26385542743_1c7e6b8d9e_o.png) 
-
-![alt-tag](https://farm8.staticflickr.com/7320/26385629583_eac6861c48_o.png)
+# Naringu
 
 
-![alt-tag](https://farm8.staticflickr.com/7300/26895705412_d6365b9a14_o.png)
+Naringu is dark jekyll theme that provide fully furnished jekyll setup, come with contact form, #6DD HTML color schema, and more features. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+
+![Naringu](images/screenshot-1.png)
+![Naringu](images/screenshot-2.png)
+![Naringu](images/screenshot-3.png)
+![Naringu](images/screenshot-4.png)
+
+## Contents
+
+- [Usage](#usage)
+ - [Sidebar menu](#sidebar-menu)
+  - [Themes](#themes)
+  - [Reverse layout](#reverse-layout)
+  - [Contact Form](#contact-form)
+  - [Comments](#comments)
+- [Development](#development)
+  - [Author](#author)
+  - [Contributors](#contributors)
+- [License](#license)
 
 
+## Usage
 
-![alt-tag](https://farm8.staticflickr.com/7370/26956762406_cbfa7a2139_o.png)
+Just download and start the Jekyll server or fork this repo.
 
-#### To create a new post :sunglasses:
+### Sidebar menu
 
-- Create a .markdown file inside _posts folder.
-- Name the file according to the standard jekyll format.
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+
 ```
-   2016-03-30-i-love-design.markdown
+---
+layout: page
+title: About
+---
 ```
-- Write the Front Matter and content in the file.
-    ```
-          ---
-          layout: post | default | page
-          title:  String Post Title
-          date:   Time Stamp
-          categories: String | Array of Strings Category / Categories 
-          ---
-    ```
-    
-    ```
-        ---
-        layout: post
-        title:  "The One with the Blackout"
-        date:   2016-03-30 19:45:31 +0530
-        categories: ["life", "friends"]
-        ---
-    ```  
+
+**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` 
 
 
-![alt-tag](https://farm8.staticflickr.com/7660/26895189602_170af0a783_o.png)
-![alt-tag](https://farm8.staticflickr.com/7594/26385450183_37116c6d32_o.png)
+### Reverse layout
 
+Reverse the page orientation with a single class.
 
-####Create new pages, such a breeze! :smile:
-- Create a .md file in the root directory.
-- Name the file with the desired page link name.
+```html
+<body class="layout-reverse">
+  ...
+</body>
 ```
-   about.md
+### Contact Form
+
+Using formspree to enable contact form in static site.
+
+Go a head `contact/index.html` just change the email in the code
+
+```html
+<form action="http://formspree.io/youremail@yourdomain.com" role="form" method="POST">
 ```
-```
-   design.md
-```
-- Write the Front Matter and content in the file.
-```
-          ---
-          layout: page
-          title: String Title of the webpage
-          permalink: / String / Permalink for the webpage
-          tagline: String Optional DevJournal Feature : Tagline for the page
-          ---
-```      
-```
-        ---
-        layout: page
-        title:  "Science"
-        permalink:   /science/
-        tagline : "Humanity is overrated."
-        ---
-```      
 
-![alt-tag](https://farm8.staticflickr.com/7124/26895188812_65218d8652_o.png)
+### Comments
 
+Using [disqus](http://disqus.com/) to enable comments in static site.
 
-That's all folks.
+Just edit variable `disqus` in `_config.yml` to your disqus link.
 
->Super Flexible, Minimal, Text Based jekyll theme for the kickass geek :sunglasses:
+## Development
 
-####It'd be really cool if you,<br>
-1.  Create some new feature and would like to integrate in DevJournal. Pull requests are most invited.
-2.  Open issues if you find bugs.
-3.  Just so you know, the license type is MIT.
+Naringu come with two branches :.
 
+- `master` for active development. 
+- `gh-pages` for preview of Naringu
 
->Its' all about being community driven.  :bus: :bus: :dash:
+### Author
 
-Have a great day!  :smile: :smile: :smiley:
+**Rizky Ariestiyansyah**
+- <https://github.com/ariestiyansyah>
+- <https://twitter.com/ariestiyansyah>
 
+### Contributors
+
+**Gildásio Júnior** - *a.k.a. @gjuniioor*
+- https://github.com/gjuniioor
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).

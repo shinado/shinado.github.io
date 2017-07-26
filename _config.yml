@@ -1,22 +1,39 @@
-# Welcome to Jekyll!
+# Dependencies
+markdown:            kramdown
+highlighter:         rouge
+
+# Gems (for Jekyll 3.0)
+gems: [jekyll-paginate]
+
+# Permalinks
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
 
-# Site settings
-title: Aris Launcher
-email: shinado023@gmail.com
+# Setup
+title:               Aris Launcher
+tagline:             ‘The New Android Launcher’
+description:         ''
+url:                 http://www.arislauncher.com
+baseurl:             /
+paginate:            7
 
-#write html inside the double quotes to display in jumbotron
-description: "<h3>Hey guys, this is</h3><h1>Aris Launcher</h1><h3>The New Android Launcher</h3>"
+# About/contact
+author:
+  name:              Daniel Ng
+  url:               https://twitter.com/shinado023
+  email:             shinado023@gmail.com
 
+# Custom vars
+version:             2.0
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://shinado.github.io" # the base hostname & protocol for your site
-twitter_username: shinado023
-github_username:  shinado
+# Social Media
+github:				http://github.com/shinado
+twitter:			http://twitter.com/shinado023
+disqus:             h
 
-# Build settings
-markdown: kramdown
+# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
+theme:
+  creator:			Rizky Ariestiyansyah
+  codename:			Naringu
+  link:             https://github.com/ariestiyansyah/naringu
