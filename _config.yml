@@ -15,7 +15,7 @@ title:               Aris Launcher
 tagline:             ‘The New Android Launcher’
 description:         ''
 url:                 http://www.arislauncher.com
-baseurl:             http://www.arislauncher.com/
+baseurl:             /
 paginate:            7
 
 # About/contact
