@@ -7,8 +7,8 @@
 =======
 		<description>Posts categorized as 'Naringu'</description>
 >>>>>>> master
-		<link>http://www.arislauncher.com</link>
-        <atom:link href="http://www.arislauncher.comfeed.category.xml" rel="self" type="application/rss+xml" />
+		<link>http://naringu.oonlab.com</link>
+        <atom:link href="http://naringu.oonlab.comfeed.category.xml" rel="self" type="application/rss+xml" />
 		
 	</channel>
 </rss>

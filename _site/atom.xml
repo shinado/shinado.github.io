@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Aris Launcher</title>
- <link href="http://www.arislauncher.com/atom.xml" rel="self"/>
- <link href="http://www.arislauncher.com/"/>
- <updated>2017-07-26T23:03:29+08:00</updated>
- <id>http://www.arislauncher.com</id>
+ <title>Naringu</title>
+ <link href="http://naringu.oonlab.com/atom.xml" rel="self"/>
+ <link href="http://naringu.oonlab.com/"/>
+ <updated>2017-07-26T23:05:38+08:00</updated>
+ <id>http://naringu.oonlab.com</id>
  <author>
-   <name>Daniel Ng</name>
-   <email>shinado023@gmail.com</email>
+   <name>Rizky Ariestiyansyah</name>
+   <email>ariestiyansyah.rizky@gmail.com</email>
  </author>
 
  
  <entry>
    <title>字符匹配的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/"/>
+   <link href="http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string</id>
+   <id>http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
 
 &lt;p&gt;从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：&lt;/p&gt;
@@ -59,9 +59,9 @@ item.jpg
  
  <entry>
    <title>Aris食用说明</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/"/>
+   <link href="http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris</id>
+   <id>http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris</id>
    <content type="html">&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
 
 &lt;p&gt;简单来说，Aris就是一个大部分操作都通过输入来完成的Android桌面。&lt;/p&gt;
@@ -299,9 +299,9 @@ ls.endw apk.highlight aris
  
  <entry>
    <title>config的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/"/>
+   <link href="http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config</id>
+   <id>http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config</id>
    <content type="html">&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
 
 &lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
@@ -346,9 +346,9 @@ ls.endw apk.highlight aris
  
  <entry>
    <title>文件管理的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/"/>
+   <link href="http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd</id>
+   <id>http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;文件管理&lt;/h2&gt;
 
 &lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
@@ -445,9 +445,9 @@ wallpaper.qq
  
  <entry>
    <title>书签管理的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/"/>
+   <link href="http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark</id>
+   <id>http://naringu.oonlab.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;书签管理&lt;/h2&gt;
 
 &lt;p&gt;书签管理插件可以让你把你需要的网页保存到Aris。这样你就可以直接在Aris上打开这个链接。使用的方法也很简单：&lt;/p&gt;

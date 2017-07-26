@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aris Launcher</title>
-    <description></description>
-    <link>http://www.arislauncher.com//</link>
-    <atom:link href="http://www.arislauncher.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Jul 2017 23:03:29 +0800</pubDate>
-    <lastBuildDate>Wed, 26 Jul 2017 23:03:29 +0800</lastBuildDate>
+    <title>Naringu</title>
+    <description>oonlab is crafted with &lt;3 by ariestiyansyah.</description>
+    <link>http://naringu.oonlab.com//</link>
+    <atom:link href="http://naringu.oonlab.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 26 Jul 2017 23:05:38 +0800</pubDate>
+    <lastBuildDate>Wed, 26 Jul 2017 23:05:38 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -50,8 +50,8 @@ item.jpg
 
 </description>
         <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/</guid>
+        <link>http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/</link>
+        <guid isPermaLink="true">http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/</guid>
         
         
         <category>食用说明</category>
@@ -294,8 +294,8 @@ ls.endw apk.highlight aris
 
 </description>
         <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/</guid>
+        <link>http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/</link>
+        <guid isPermaLink="true">http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/</guid>
         
         
         <category>食用说明</category>
@@ -345,8 +345,8 @@ ls.endw apk.highlight aris
 &lt;p&gt;如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/</guid>
+        <link>http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/</link>
+        <guid isPermaLink="true">http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/</guid>
         
         
         <category>食用说明</category>
@@ -448,8 +448,8 @@ wallpaper.qq
 
 </description>
         <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/</guid>
+        <link>http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/</link>
+        <guid isPermaLink="true">http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/</guid>
         
         
         <category>食用说明</category>
@@ -501,8 +501,8 @@ wallpaper.qq
 &lt;p&gt;即可。&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Jul 2017 00:31:43 +0800</pubDate>
-        <link>http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/</link>
-        <guid isPermaLink="true">http://www.arislauncher.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/</guid>
+        <link>http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/</link>
+        <guid isPermaLink="true">http://naringu.oonlab.com//%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/</guid>
         
         
         <category>食用说明</category>
