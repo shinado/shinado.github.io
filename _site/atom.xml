@@ -4,7 +4,7 @@
  <title>Aris Launcher</title>
  <link href="http://www.arislauncher.com/atom.xml" rel="self"/>
  <link href="http://www.arislauncher.com/"/>
- <updated>2017-07-27T10:38:01+08:00</updated>
+ <updated>2017-07-27T12:06:32+08:00</updated>
  <id>http://www.arislauncher.com</id>
  <author>
    <name>Daniel Ng</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>字符匹配的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string/"/>
+   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/string/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/string</id>
+   <id>http://www.arislauncher.com/aris/guide/2017/07/26/string</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
 
 &lt;p&gt;从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：&lt;/p&gt;
@@ -59,14 +59,14 @@ item.jpg
  
  <entry>
    <title>Aris食用说明</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris/"/>
+   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/guide-aris/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/manual-aris</id>
+   <id>http://www.arislauncher.com/aris/guide/2017/07/26/guide-aris</id>
    <content type="html">&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
 
 &lt;p&gt;简单来说，Aris就是一个大部分操作都通过输入来完成的Android桌面。&lt;/p&gt;
 
-&lt;p&gt;但是Aris不止如此。在Aris桌面，你可以连接各个不同的组件来实现原本复杂的操作。一个最简单的例子，如果你想把小明的手机号发生给小红，在一般情况下（后来锤子推出了一步的功能，如果你用的是锤子，我表示此操作无明显优势），你需要&lt;/p&gt;
+&lt;p&gt;但是Aris不止如此。在Aris桌面，你可以连接各个不同的组件来实现原本复杂的操作。一个最简单的例子，如果你想把小明的手机号发送给小红，在一般情况下（后来锤子推出了一步的功能，如果你用的是锤子，我表示此操作无明显优势），你需要&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;进入联系人app&lt;/li&gt;
@@ -113,143 +113,13 @@ item.jpg
 
 &lt;h2 id=&quot;section-2&quot;&gt;文件管理&lt;/h2&gt;
 
-&lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
-
-&lt;p&gt;进入文件管理之后，你将处于SD卡的根路径下，你只会搜索到当前文件夹下的文件或文件夹，无法搜索到应用、联系人、或者其他插件。只有执行了某个文件或者使用exit指令才会退出。当你执行了某个文件夹，你会进入到该文件夹，也就是说，你只能搜索到该文件夹下的文件。&lt;/p&gt;
-
-&lt;p&gt;当你进入到某个文件夹时，输入区域的指示器会显示为该文件夹的名字。&lt;/p&gt;
-
-&lt;p&gt;在文件管理模式下，只有一种情况你会在不退出的情况下搜索到应用或者其他插件，那就是连接。你可以通过连接符把文件输出到其他的组件。输入连接符后，系统会启用其他插件的搜索功能，此时你可以搜索到其他组件。例如，在SD卡目录下，有一个文件的地址是&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/download/wallpaper.png
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;把这个文件分享到QQ的指令为（分三次）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd
-download
-wallpaper.qq
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你觉得这样有点麻烦，你可以使用一句指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download/wallpaper.qq
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;同时请记住，你不需要输入完整的文件或文件夹地址，当你需要的结果在第一个位置以实心的方块出现，你就可以按进行下一步操作。所以实际情况下，你的输入可能是&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd do/w.qq  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在上面的例子中，当cd为首选结果时，输入空格就可以直接进入文件管理模式，不需要执行。需要注意的是，&lt;strong&gt;在文件管理模式下，不需要再输入cd来切换路径。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;如果文件是图片的话，你还可以连接到config，将该图片设置为桌面。以上面的例子来说，指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd do/w.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;可以将/download/wallpaper.png这个图片设置为壁纸。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;返回上一级&lt;/h3&gt;
-
-&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来返回上一级。请注意，返回上一级的组件显示名称为“cd..”。执行这个组件就可以返回上一级文件夹。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;显示所有文件或文件夹&lt;/h3&gt;
-
-&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ls
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来显示该文件夹下所有的文件或文件夹。&lt;/p&gt;
-
-&lt;p&gt;同时，在没有进入文件管理模式的情况下，你还可以通过&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ls download
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来直接显示download文件夹下的所有文件或文件夹（尚未实现）。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-5&quot;&gt;移动文件&lt;/h3&gt;
-&lt;p&gt;你可以通过连接符来进行文件的移动。以上面的例子来说，指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd do/w.images
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会把/download/wallpaper.png这个文件移动到/download/images文件夹中。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-6&quot;&gt;删除文件&lt;/h3&gt;
-
-&lt;p&gt;你可以将任意文件或文件夹连接到指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来进删除。例如在前面的例子中，删除文件download/wallpaper.png可以使用指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd do/w.rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来实现。&lt;/p&gt;
-
-&lt;p&gt;同时，你还可以配合startw和endw进行批量操作。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;highlight&quot;&gt;highlight插件&lt;/h2&gt;
-
-&lt;p&gt;hightlight插件用于对输入的文字进行有选择地高亮展示。常用于文件管理的ls指令。举例来说，你想要高亮显示根目录下任何带有apk文字的文件或文件夹，可以使用这个指令:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd
-ls.highlight apk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你还可以配合startw或者endw来进行操作。比如，在所有以apk结尾的文件或文件夹里，高亮aris字符:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd
-ls.endw apk.highlight aris
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;http://arislauncher.com&quot;&gt;戳这里&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
 
-&lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://arislauncher.com&quot;&gt;戳这里&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;批量导入的格式为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;,&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这里的编号指的是config的设置编号。对于任何启动/关闭的设置，值只可为true或者false；对于文字大小，只支持数字输入；对于颜色，只支持hex色码；对于壁纸，只支持http协议的图片资源（但是有一个特例，当输入是一个本地图片时，直接设置为壁纸）。例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;0:true,1:true,2:true,3:true,4:hello world,5:false,6:false,8:#123456,9#987654,a:12,b:execute.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;当然，你可以只对单个设置进行操作，如&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;0:true.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;再当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;clipboard.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来批量应用配置。&lt;/p&gt;
-
-&lt;p&gt;你可以将你的配置导出到剪切板，使用指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;config.clipboard
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。&lt;/p&gt;
-
-&lt;h2 id=&quot;section-7&quot;&gt;内置插件简单介绍&lt;/h2&gt;
+&lt;h2 id=&quot;section-3&quot;&gt;内置插件简单介绍&lt;/h2&gt;
 
 &lt;p&gt;Aris内置了几个基本的插件。它们是：restart, clear, config, help. &lt;/p&gt;
 
@@ -259,7 +129,14 @@ ls.endw apk.highlight aris
 
 &lt;p&gt;config用于配置app。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-8&quot;&gt;如果你对有些表述不了解…&lt;/h2&gt;
+&lt;p&gt;help用于获得帮助。你可以直接使用help或者通过：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;插件&amp;gt;.help
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;来获取插件的帮助（如果有的话）。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;如果你对有些表述不了解…&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;指令&lt;/strong&gt;：在输入区域的输入，即为指令&lt;/p&gt;
 
@@ -299,9 +176,9 @@ ls.endw apk.highlight aris
  
  <entry>
    <title>config的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config/"/>
+   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/config/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/config</id>
+   <id>http://www.arislauncher.com/aris/guide/2017/07/26/config</id>
    <content type="html">&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
 
 &lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
@@ -346,9 +223,9 @@ ls.endw apk.highlight aris
  
  <entry>
    <title>文件管理的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd/"/>
+   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/cd/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/cd</id>
+   <id>http://www.arislauncher.com/aris/guide/2017/07/26/cd</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;文件管理&lt;/h2&gt;
 
 &lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
@@ -445,9 +322,9 @@ wallpaper.qq
  
  <entry>
    <title>书签管理的使用</title>
-   <link href="http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark/"/>
+   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/bookmark/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/%E9%A3%9F%E7%94%A8%E8%AF%B4%E6%98%8E/2017/07/26/bookmark</id>
+   <id>http://www.arislauncher.com/aris/guide/2017/07/26/bookmark</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;书签管理&lt;/h2&gt;
 
 &lt;p&gt;书签管理插件可以让你把你需要的网页保存到Aris。这样你就可以直接在Aris上打开这个链接。使用的方法也很简单：&lt;/p&gt;
