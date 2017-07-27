@@ -4,7 +4,7 @@
  <title>Aris Launcher</title>
  <link href="http://www.arislauncher.com/atom.xml" rel="self"/>
  <link href="http://www.arislauncher.com/"/>
- <updated>2017-07-27T12:11:09+08:00</updated>
+ <updated>2017-07-27T14:02:02+08:00</updated>
  <id>http://www.arislauncher.com</id>
  <author>
    <name>Daniel Ng</name>
@@ -187,12 +187,12 @@ item.jpg
 
 &lt;p&gt;批量导入的格式为：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;,&amp;lt;编号&amp;gt;:&amp;lt;值&amp;gt;.config
+&lt;pre&gt;&lt;code&gt;{&quot;编号&quot;:&quot;值&quot;,&quot;编号&quot;:&quot;值&quot;}.config
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;这里的编号指的是config的设置编号。对于任何启动/关闭的设置，值只可为true或者false；对于文字大小，只支持数字输入；对于颜色，只支持hex色码；对于壁纸和文字，只支持http协议的地址。例如：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;0:true,1:true,2:true,3:true,4:helloworld,5:false,6:false,8:#123456,9#987654,a:12,b:execute.config
+&lt;pre&gt;&lt;code&gt;{&quot;0&quot;:&quot;false&quot;,&quot;1&quot;:&quot;true&quot;,&quot;2&quot;:&quot;true&quot;,&quot;3&quot;:&quot;true&quot;,&quot;4&quot;:&quot;helloworld&quot;,&quot;5&quot;:&quot;false&quot;,&quot;6&quot;:&quot;false&quot;,&quot;8&quot;:&quot;#123456&quot;,&quot;9&quot;:&quot;#987654&quot;,&quot;a&quot;:&quot;12&quot;,&quot;b&quot;:&quot;execute&quot;}.config
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;当配合文件管理功能使用时，你只需要通过连接符输入到config中，也就是&lt;/p&gt;
@@ -202,12 +202,7 @@ item.jpg
 
 &lt;p&gt;这个命令就会自动地根据文件的格式来进行设置。例如，当输入是一个本地图片时，直接设置为壁纸；如果输入是一个本地的字体文件，则直接设置为Aris的字体。&lt;/p&gt;
 
-&lt;p&gt;当然，你可以只对单个设置进行操作。  &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;0:true.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;再当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过&lt;/p&gt;
+&lt;p&gt;当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;clipboard.config
 &lt;/code&gt;&lt;/pre&gt;
