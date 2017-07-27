@@ -4,7 +4,7 @@
  <title>Aris Launcher</title>
  <link href="http://www.arislauncher.com/atom.xml" rel="self"/>
  <link href="http://www.arislauncher.com/"/>
- <updated>2017-07-27T12:06:32+08:00</updated>
+ <updated>2017-07-27T12:11:09+08:00</updated>
  <id>http://www.arislauncher.com</id>
  <author>
    <name>Daniel Ng</name>
@@ -13,55 +13,10 @@
 
  
  <entry>
-   <title>字符匹配的使用</title>
-   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/string/"/>
-   <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2017/07/26/string</id>
-   <content type="html">&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
-
-&lt;p&gt;从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;输入&amp;gt;.startw &amp;lt;字符&amp;gt;
-&amp;lt;输入&amp;gt;.endw &amp;lt;字符&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这两个指令分别可以筛选出输入中以&lt;字符&gt;开头/结尾的每一行。例如，如果剪切板里的文字是&lt;/字符&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wallpaper.png
-aris.apk
-item.jpg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;那么这个命令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;clipboard.endw apk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就会输出&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aris.apk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;字符匹配可以配合文件管理使用。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者你知道在download文件夹下有一个ttf的字体文件，那么这个指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download.endw ttf.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就可以设置Aris桌面的字体了。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
    <title>Aris食用说明</title>
-   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/guide-aris/"/>
-   <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2017/07/26/guide-aris</id>
+   <link href="http://www.arislauncher.com/aris/guide/2019/07/26/guide-aris/"/>
+   <updated>2019-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/aris/guide/2019/07/26/guide-aris</id>
    <content type="html">&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
 
 &lt;p&gt;简单来说，Aris就是一个大部分操作都通过输入来完成的Android桌面。&lt;/p&gt;
@@ -111,15 +66,7 @@ item.jpg
 
 &lt;p&gt;来直接获得APK插件并执行。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;文件管理&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://arislauncher.com&quot;&gt;戳这里&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://arislauncher.com&quot;&gt;戳这里&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section-3&quot;&gt;内置插件简单介绍&lt;/h2&gt;
+&lt;h2 id=&quot;section-2&quot;&gt;内置插件简单介绍&lt;/h2&gt;
 
 &lt;p&gt;Aris内置了几个基本的插件。它们是：restart, clear, config, help. &lt;/p&gt;
 
@@ -136,7 +83,17 @@ item.jpg
 
 &lt;p&gt;来获取插件的帮助（如果有的话）。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-4&quot;&gt;如果你对有些表述不了解…&lt;/h2&gt;
+&lt;h2 id=&quot;section-3&quot;&gt;扩展插件&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/cd/&quot;&gt;文件管理&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;config&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/config/&quot;&gt;config&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/bookmark/&quot;&gt;书签&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/string/&quot;&gt;字符操作&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;如果你对有些表述不了解…&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;指令&lt;/strong&gt;：在输入区域的输入，即为指令&lt;/p&gt;
 
@@ -170,6 +127,51 @@ item.jpg
 &lt;p&gt;输出：在上一条件下，B为A的输出。&lt;/p&gt;
 
 &lt;p&gt;只执行插件：如果插件A不接收任何输入，称其为只执行插件&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>字符匹配的使用</title>
+   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/string/"/>
+   <updated>2017-07-26T00:31:43+08:00</updated>
+   <id>http://www.arislauncher.com/aris/guide/2017/07/26/string</id>
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
+
+&lt;p&gt;从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;输入&amp;gt;.startw &amp;lt;字符&amp;gt;
+&amp;lt;输入&amp;gt;.endw &amp;lt;字符&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这两个指令分别可以筛选出输入中以&lt;字符&gt;开头/结尾的每一行。例如，如果剪切板里的文字是&lt;/字符&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wallpaper.png
+aris.apk
+item.jpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么这个命令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;clipboard.endw apk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就会输出&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;aris.apk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;字符匹配可以配合文件管理使用。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者你知道在download文件夹下有一个ttf的字体文件，那么这个指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd download.endw ttf.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就可以设置Aris桌面的字体了。&lt;/p&gt;
 
 </content>
  </entry>

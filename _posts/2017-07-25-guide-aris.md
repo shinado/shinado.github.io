@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Aris食用说明"
-date:   2017-07-25 22:01:43 +0530
+date:   2019-07-25 22:01:43 +0530
 categories: Aris Guide
 ---
 ## Aris是什么
@@ -41,18 +41,6 @@ categories: Aris Guide
     
   来直接获得APK插件并执行。
     
-## 文件管理
-
-  [戳这里]
-  
-  [戳这里]:http://arislauncher.com/aris%20guide/2017/07/25/cd/
-          
-## config详细介绍
-
-  [戳这里]
-  
-  [戳这里]:http://arislauncher.com
-     
 ## 内置插件简单介绍  
   
   Aris内置了几个基本的插件。它们是：restart, clear, config, help. 
@@ -68,6 +56,25 @@ categories: Aris Guide
     <插件>.help
   
   来获取插件的帮助（如果有的话）。
+  
+## 扩展插件
+
+
+### [文件管理]
+  
+  [文件管理]:http://arislauncher.com/aris/guide/2017/07/25/cd/
+          
+### [config]
+
+  [config]:http://arislauncher.com/aris/guide/2017/07/25/config/
+  
+### [书签]
+
+  [书签]:http://arislauncher.com/aris/guide/2017/07/25/bookmark/
+     
+### [字符操作]
+
+  [字符操作]:http://arislauncher.com/aris/guide/2017/07/25/string/
   
 ## 如果你对有些表述不了解...
 
