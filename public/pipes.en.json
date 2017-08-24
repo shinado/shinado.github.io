@@ -5,7 +5,7 @@
     "introduction": "To disable an app or contact from showing up in the searching result. ",
     "name": "Disable",
     "pkg": "com.ss.disable",
-    "sid": "3001",
+    "sid": "10001",
     "targetVersion": "1109",
     "url": "http://ojybcc8qi.bkt.clouddn.com/disable.dex",
     "versionCode": "1",
