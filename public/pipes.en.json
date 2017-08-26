@@ -13,18 +13,6 @@
   },
 {
     "author": "ss",
-    "className": "indi.ss.pipes.search.SearchPipe",
-    "introduction": "To do a web searching in Aris",
-    "name": "Search",
-    "pkg": "com.ss.search",
-    "sid": "10003",
-    "targetVersion": "1109",
-    "url": "http://ojybcc8qi.bkt.clouddn.com/search.dex",
-    "versionCode": "1",
-    "versionName": "0.0.5-beta"
-  },
-{
-    "author": "ss",
     "className": "indi.ss.pipes.disable.ReenablePipe",
     "introduction": "To enable what's been disabled",
     "name": "Enable",
@@ -38,7 +26,7 @@
 {
     "author": "ss",
     "className": "indi.ss.pipes.widget.WidgetPipe",
-    "introduction": "To add AppWidget to Aris",
+    "introduction": "To add AppWidget to Aris. For testing, BUG ON FIRE. ",
     "name": "Widget",
     "pkg": "com.ss.widget",
     "sid": "10004",
