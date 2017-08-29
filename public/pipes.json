@@ -13,18 +13,6 @@
   },
 {
     "author": "ss",
-    "className": "indi.ss.pipes.search.SearchPipe",
-    "introduction": "在Aris桌面直接搜索内容，beta版本请慎用。",
-    "name": "Search",
-    "pkg": "com.ss.search",
-    "sid": "10003",
-    "targetVersion": "9999",
-    "url": "http://ojybcc8qi.bkt.clouddn.com/search.dex",
-    "versionCode": "1",
-    "versionName": "0.0.5-beta"
-  },
-{
-    "author": "ss",
     "className": "indi.ss.pipes.disable.ReenablePipe",
     "introduction": "重新展示被隐藏的app或联系人",
     "name": "Reenable",
@@ -34,17 +22,5 @@
     "url": "http://ojybcc8qi.bkt.clouddn.com/enable.dex",
     "versionCode": "1",
     "versionName": "0.1.0"
-  },
-{
-    "author": "ss",
-    "className": "indi.ss.pipes.widget.WidgetPipe",
-    "introduction": "添加桌面小部件，beta版请慎用",
-    "name": "AppWidget",
-    "pkg": "com.ss.widget",
-    "sid": "10004",
-    "targetVersion": "9999",
-    "url": "http://ojybcc8qi.bkt.clouddn.com/widget.dex",
-    "versionCode": "1",
-    "versionName": "0.0.5-beta"
   }
 ]

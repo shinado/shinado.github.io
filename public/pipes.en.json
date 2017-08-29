@@ -22,17 +22,5 @@
     "url": "http://ojybcc8qi.bkt.clouddn.com/enable.dex",
     "versionCode": "1",
     "versionName": "0.0.5-beta"
-  },
-{
-    "author": "ss",
-    "className": "indi.ss.pipes.widget.WidgetPipe",
-    "introduction": "To add AppWidget to Aris. For testing, BUG ON FIRE. ",
-    "name": "Widget",
-    "pkg": "com.ss.widget",
-    "sid": "10004",
-    "targetVersion": "9999",
-    "url": "http://ojybcc8qi.bkt.clouddn.com/widget.dex",
-    "versionCode": "1",
-    "versionName": "0.0.5-beta"
   }
 ]
