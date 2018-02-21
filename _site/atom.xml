@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Aris Launcher</title>
- <link href="http://www.arislauncher.com/atom.xml" rel="self"/>
- <link href="http://www.arislauncher.com/"/>
- <updated>2017-07-30T11:06:47+08:00</updated>
- <id>http://www.arislauncher.com</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-02-21T21:45:26+08:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Daniel Ng</name>
    <email>shinado023@gmail.com</email>
@@ -13,356 +13,277 @@
 
  
  <entry>
-   <title>Aris食用说明</title>
-   <link href="http://www.arislauncher.com/aris/guide/2019/07/26/guide-aris/"/>
-   <updated>2019-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2019/07/26/guide-aris</id>
-   <content type="html">&lt;h2 id=&quot;aris&quot;&gt;Aris是什么&lt;/h2&gt;
+   <title>Aris Launcher</title>
+   <link href="http://localhost:4000/aris/guide/2018/02/10/guide-aris/"/>
+   <updated>2018-02-10T00:31:43+08:00</updated>
+   <id>http://localhost:4000/aris/guide/2018/02/10/guide-aris</id>
+   <content type="html">&lt;h2 id=&quot;what-is-aris&quot;&gt;What is Aris&lt;/h2&gt;
 
-&lt;p&gt;简单来说，Aris就是一个大部分操作都通过输入来完成的Android桌面。&lt;/p&gt;
+&lt;p&gt;To begin with, Aris is an Android Launcher where you do everything by searching, mostly.&lt;/p&gt;
 
-&lt;p&gt;但是Aris不止如此。在Aris桌面，你可以连接各个不同的组件来实现原本复杂的操作。一个最简单的例子，如果你想把小明的手机号发送给小红，在一般情况下（后来锤子推出了一步的功能，如果你用的是锤子，我表示此操作无明显优势），你需要&lt;/p&gt;
+&lt;p&gt;However, Aris is more than that. In Aris, you can connect various plugins to accomplish complex operations. For instance, if you’d like to share Maya’s phone number to Eric, in the normal case, you have to&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;进入联系人app&lt;/li&gt;
-  &lt;li&gt;找到小红的号码&lt;/li&gt;
-  &lt;li&gt;复制&lt;/li&gt;
-  &lt;li&gt;返回&lt;/li&gt;
-  &lt;li&gt;找到小明的号码&lt;/li&gt;
-  &lt;li&gt;选择发送短信&lt;/li&gt;
-  &lt;li&gt;粘贴&lt;/li&gt;
-  &lt;li&gt;发送&lt;/li&gt;
+  &lt;li&gt;Launch contact book&lt;/li&gt;
+  &lt;li&gt;Find Maya&lt;/li&gt;
+  &lt;li&gt;Copy&lt;/li&gt;
+  &lt;li&gt;Back&lt;/li&gt;
+  &lt;li&gt;Find Eric&lt;/li&gt;
+  &lt;li&gt;Choose message&lt;/li&gt;
+  &lt;li&gt;Paste&lt;/li&gt;
+  &lt;li&gt;Send&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;而在Aris桌面，你只需要输入&lt;/p&gt;
+&lt;p&gt;whereas in Aris, just type&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;xm.xh
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;maya-&amp;gt;eric
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;并输入回车即可。请注意，你不需要输入完整的拼音或者首字母，只要你想要的结果在第一个位置以实心的方块出现（首选结果），即表示它是当前操作的对象。你既可以输入回车键以执行该结果，或者通过连接符(.)来连接其他组件。&lt;/p&gt;
+&lt;p&gt;and hit ‘enter’ in your keyboard. Please note that you do not need to fully type ‘Maya’ or ‘Eirc’, whatever you want appears as the first item in the result area, which means it’s the Current Operating Object*, you can either hit ‘enter’ or use connection operator(-&amp;gt;) to connect it with any other items.&lt;/p&gt;
 
-&lt;h2 id=&quot;section&quot;&gt;连接&lt;/h2&gt;
+&lt;h2 id=&quot;connection&quot;&gt;Connection&lt;/h2&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在Linux中，可以通过管道(&lt;/td&gt;
-      &lt;td&gt;)来传递数据。Aris借鉴了管道的概念，实现了连接不同组件的功能。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;In Linux, you can share data with pipe. Very much like this idea, you can use connection operator(-&amp;gt;) to connect various pipes.&lt;/p&gt;
 
-&lt;p&gt;当你输入连接符(.)时，你的首选结果就会作为输入，等待接收输入的组件。依托于不同的插件，你可以方便地对你的手机进行操作。例如，APK插件（可以从插件商店下载）可以把你手机上的app导出为apk文件并进行分享。如果你想要把酷安的apk直接发送给QQ好友，你只需要这么做：&lt;/p&gt;
+&lt;p&gt;When you type connection operator(-&amp;gt;), Aris will take the Primary Result* as input, ready for the next item you are going to connect it with. Via different plugins, you can use your phone like a real hacker. For instance, with APK plugin(available in Store), you can share your app as apk files to your friends in Whatsapp with this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;kuan.apk.qq
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;facebook-&amp;gt;apk-&amp;gt;whatsapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;访问远程插件&lt;/h2&gt;
+&lt;h2 id=&quot;some-basic-plugins&quot;&gt;Some Basic Plugins&lt;/h2&gt;
 
-&lt;p&gt;从1.0.7开始，你不需要在插件商店下载插件再执行。如果你需要某个插件商店的插件时，可以通过远程访问符($)来实现。例如，在没有下载APK插件的情况下，可以通过这个指令：&lt;/p&gt;
+&lt;p&gt;Aris comes with few most basic plugins, which are: restart, clear, help, config, store, uninstall and info.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;kuan.$apk.qq
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I may not need to explain what restart does since it is quite obvious. However, I may still need to explain the rest.&lt;/p&gt;
 
-&lt;p&gt;来直接获得APK插件并执行。&lt;/p&gt;
+&lt;p&gt;clear: To clear the console or, by using {plugin}-&amp;gt;clear to clear the pipe configurations if the plugin is able to be cleared.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;内置插件简单介绍&lt;/h2&gt;
+&lt;p&gt;config: To configurate Aris.&lt;/p&gt;
 
-&lt;p&gt;Aris内置了几个基本的插件。它们是：restart, clear, config, help. &lt;/p&gt;
+&lt;p&gt;help: To get help obviously. You can also use&lt;/p&gt;
 
-&lt;p&gt;restart用于重启app。遇到什么bug都可以重启一下。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{plugin}-&amp;gt;help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;clear是一个只执行插件，用于清除屏幕的显示。&lt;/p&gt;
+&lt;p&gt;to get help for the certain plugin(if applicantable).&lt;/p&gt;
 
-&lt;p&gt;config用于配置app。&lt;/p&gt;
+&lt;h2 id=&quot;explained&quot;&gt;Explained&lt;/h2&gt;
 
-&lt;p&gt;help用于获得帮助。你可以直接使用help或者通过：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instruction&lt;/strong&gt;：Any input in the input area is considered as an instruction&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;插件&amp;gt;.help
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Parameter&lt;/strong&gt;：For Instruction&lt;/p&gt;
 
-&lt;p&gt;来获取插件的帮助（如果有的话）。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;扩展插件&lt;/h2&gt;
+&lt;p&gt;p is a Parameter of a.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-4&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/cd/&quot;&gt;文件管理&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Component&lt;/strong&gt;：Refers to any item displayed in the result area.&lt;/p&gt;
 
-&lt;h3 id=&quot;config&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/config/&quot;&gt;config&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Result Set&lt;/strong&gt;：All available Components under any Instruction that does not include any operator.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-5&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/bookmark/&quot;&gt;书签&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Primary Result&lt;/strong&gt;: The first Component under any Instruction that does not include any operator.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-6&quot;&gt;&lt;a href=&quot;http://arislauncher.com/aris/guide/2017/07/25/string/&quot;&gt;字符操作&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Plugin&lt;/strong&gt;：A Plugin is the executable unit, which contians one or more Components. For instance, the Application Plugin contains all applications in your phone. Any single application is a Component, whereas the Clear Plugin contains only one Component, which is Clear itself.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-7&quot;&gt;如果你对有些表述不了解…&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Compatable Plugin&lt;/strong&gt;：A Plugin that contains multiple Components&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;指令&lt;/strong&gt;：在输入区域的输入，即为指令&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Action Plugin&lt;/strong&gt;: A Plugin that contains only one Component&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;参数&lt;/strong&gt;：对于指令&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Plugin&lt;/strong&gt;：A Compatable Plugin that requires a certain Component to enable all the other Components it contains. For instance, the Directory Plugin requires user to use Instruction ‘cd’ to enable directory search.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;a p
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Execute&lt;/strong&gt;：Refers to the action when you hit ‘enter’ or click on one certain Component.&lt;/p&gt;
 
-&lt;p&gt;p称为a的参数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Connect&lt;/strong&gt;：For any Instruction comes with&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;组件&lt;/strong&gt;：任何显示在结果区域的方块，即为组件。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a-&amp;gt;b
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;结果集：对于不包含特殊符号的任意指令a，对应的所有搜索到的组件&lt;/p&gt;
-
-&lt;p&gt;首选结果：对于不包含特殊符号的任意指令a，对应的所有搜索到的组件的第一个，通常记为A&lt;/p&gt;
-
-&lt;p&gt;插件：Aris的可执行单位，组件的host。和组件的关系可能是一对一，或者一对多。举例来说，应用程序是一个插件，它包含了你系统中所有app所对应的组件，任意一个app都是一个组件；clear插件只包含了唯一一个组件，也就是clear本身。插件又可分为以下几类：&lt;/p&gt;
-
-&lt;p&gt;可搜索插件：包含多个组件的插件&lt;/p&gt;
-
-&lt;p&gt;单一执行插件：只包含一个组件的插件&lt;/p&gt;
-
-&lt;p&gt;全搜索插件：需要通过某个组件来启用搜索该插件的其他组件的插件。&lt;/p&gt;
-
-&lt;p&gt;执行：当你输入任意指令并输入了回车键，或者选择了某个组件时，我们称为执行该组件。&lt;/p&gt;
-
-&lt;p&gt;连接：对于任何形如a.b的指令，我们称为a和b的连接。其中，点号(.)为连接符。&lt;/p&gt;
-
-&lt;p&gt;输入：对于任何形如a.b的指令。假定指令a的首选指令搜索组件为A，指令b的首选指令搜索组件为B，A即为B的输入。&lt;/p&gt;
-
-&lt;p&gt;输出：在上一条件下，B为A的输出。&lt;/p&gt;
-
-&lt;p&gt;只执行插件：如果插件A不接收任何输入，称其为只执行插件&lt;/p&gt;
+&lt;p&gt;we call Connect b with a, where the symbol(-&amp;gt;) is the connection operator.&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>字符匹配的使用</title>
-   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/string/"/>
-   <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2017/07/26/string</id>
-   <content type="html">&lt;h2 id=&quot;section&quot;&gt;字符匹配&lt;/h2&gt;
+   <title>Directory</title>
+   <link href="http://localhost:4000/aris/guide/2018/02/10/directory/"/>
+   <updated>2018-02-10T00:31:43+08:00</updated>
+   <id>http://localhost:4000/aris/guide/2018/02/10/directory</id>
+   <content type="html">&lt;p&gt;There are two ways to start directories search.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;input cd and hit enter&lt;/li&gt;
+  &lt;li&gt;directly input ‘cd {directory of file you need}. For instance, if yuo’d like to check directory /downloads in the root, simply use
+  cd downloads&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;从1.0.70开始，字符匹配插件作为内置插件加入Aris全家桶。字符匹配的基本用法为：&lt;/p&gt;
+&lt;p&gt;Please note that once you’re in directory mode, do not use ‘cd’ again, which is different with Linux.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;输入&amp;gt;.startw &amp;lt;字符&amp;gt;
-&amp;lt;输入&amp;gt;.endw &amp;lt;字符&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you’re in directory search mode, you will be in the root directory of external storage. You won’t be able to search any other applications or plugins under this mode, until a file is executed or ‘exit’ is executed. If the file you execute is an folder, you’ll go into that folder and you’ll be able to search all the files under that folder. The indicator area will display the current directory.&lt;/p&gt;
 
-&lt;p&gt;这两个指令分别可以筛选出输入中以&lt;字符&gt;开头/结尾的每一行。例如，如果剪切板里的文字是&lt;/字符&gt;&lt;/p&gt;
+&lt;p&gt;You can connect a certain file to another plugin, notablly, another application. After connect operation, you will be able to search all the other plugins including applications. For instance, there’s this file&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;wallpaper.png
-aris.apk
-item.jpg
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/download/wallpaper.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;那么这个命令&lt;/p&gt;
+&lt;p&gt;If you want to share this file in WhatsApp, you can do this(with 3 steps)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;clipboard.endw apk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就会输出&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aris.apk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;字符匹配可以配合文件管理使用。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者你知道在download文件夹下有一个ttf的字体文件，那么这个指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download.endw ttf.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就可以设置Aris桌面的字体了。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>config的使用</title>
-   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/config/"/>
-   <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2017/07/26/config</id>
-   <content type="html">&lt;h2 id=&quot;config&quot;&gt;config详细介绍&lt;/h2&gt;
-
-&lt;p&gt;config插件作为系统的默认插件，使用上来说应该是很直观了。但是除了上文提到的通过cd指令来设置壁纸之外，它还支持批量导入导出的功能。&lt;/p&gt;
-
-&lt;p&gt;批量导入的格式为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{&quot;编号&quot;:&quot;值&quot;,&quot;编号&quot;:&quot;值&quot;}.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这里的编号指的是config的设置编号。对于任何启动/关闭的设置，值只可为true或者false；对于文字大小，只支持数字输入；对于颜色，只支持hex色码；对于壁纸和文字，只支持http协议的地址。例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{&quot;0&quot;:&quot;false&quot;,&quot;1&quot;:&quot;true&quot;,&quot;2&quot;:&quot;true&quot;,&quot;3&quot;:&quot;true&quot;,&quot;4&quot;:&quot;helloworld&quot;,&quot;5&quot;:&quot;false&quot;,&quot;6&quot;:&quot;false&quot;,&quot;8&quot;:&quot;#123456&quot;,&quot;9&quot;:&quot;#987654&quot;,&quot;a&quot;:&quot;12&quot;,&quot;b&quot;:&quot;execute&quot;}.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;当配合文件管理功能使用时，你只需要通过连接符输入到config中，也就是&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;文件&amp;gt;.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这个命令就会自动地根据文件的格式来进行设置。例如，当输入是一个本地图片时，直接设置为壁纸；如果输入是一个本地的字体文件，则直接设置为Aris的字体。&lt;/p&gt;
-
-&lt;p&gt;当然，这个config的最大用处是快速设置别人分享的主题。你可以把其他用户分享的配置复制起来，然后再通过&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;clipboard.config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来批量应用配置。&lt;/p&gt;
-
-&lt;p&gt;你可以将你的配置导出到剪切板，使用指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;config.clipboard
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你设置了壁纸，这个指令将会把你的壁纸上传到服务器并生成下载链接。这样使用你的配置的用户就可以直接下载到你的壁纸，从而完全应用你的个人设置（尚未实现）。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>文件管理的使用</title>
-   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/cd/"/>
-   <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2017/07/26/cd</id>
-   <content type="html">&lt;h2 id=&quot;section&quot;&gt;文件管理&lt;/h2&gt;
-
-&lt;p&gt;文件管理是一个全搜索插件，需要通过cd指令来进入文件管理模式。&lt;/p&gt;
-
-&lt;p&gt;进入文件管理之后，你将处于SD卡的根路径下，你只会搜索到当前文件夹下的文件或文件夹，无法搜索到应用、联系人、或者其他插件。只有执行了某个文件或者使用exit指令才会退出。当你执行了某个文件夹，你会进入到该文件夹，也就是说，你只能搜索到该文件夹下的文件。&lt;/p&gt;
-
-&lt;p&gt;当你进入到某个文件夹时，输入区域的指示器会显示为该文件夹的名字。&lt;/p&gt;
-
-&lt;p&gt;在文件管理模式下，只有一种情况你会在不退出的情况下搜索到应用或者其他插件，那就是连接。你可以通过连接符把文件输出到其他的组件。输入连接符后，系统会启用其他插件的搜索功能，此时你可以搜索到其他组件。例如，在SD卡目录下，有一个文件的地址是&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/download/wallpaper.png
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;把这个文件分享到QQ的指令为（分三次）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd
 download
-wallpaper.qq
-&lt;/code&gt;&lt;/pre&gt;
+wallpaper-&amp;gt;whatsapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;如果你觉得这样有点麻烦，你可以使用一句指令&lt;/p&gt;
+&lt;p&gt;which is equivalent to&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;cd download/wallpaper.qq
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd download/wallpaper-&amp;gt;whasapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;同时请记住，你不需要输入完整的文件或文件夹地址，当你需要的结果在第一个位置以实心的方块出现，你就可以按进行下一步操作。所以实际情况下，你的输入可能是&lt;/p&gt;
+&lt;p&gt;Please also note that, you do not need to input the full folder or filer. Whenever the result you need appears in the leftmost, you can continue with your next code. In this case, your input might be&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;cd do/w.qq  
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd do/w-&amp;gt;wh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;在上面的例子中，当cd为首选结果时，输入空格就可以直接进入文件管理模式，不需要执行。需要注意的是，&lt;strong&gt;在文件管理模式下，不需要再输入cd来切换路径。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;###Back to parent directory&lt;/p&gt;
 
-&lt;p&gt;如果文件是图片的话，你还可以连接到config，将该图片设置为桌面。以上面的例子来说，指令&lt;/p&gt;
+&lt;p&gt;Under directory mode, you can use&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;cd do/w.config
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;可以将/download/wallpaper.png这个图片设置为壁纸。&lt;/p&gt;
+&lt;p&gt;to go back to parent directory. Please note that the plugin that takes you to parent directory is ‘cd..’.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;返回上一级&lt;/h3&gt;
+&lt;p&gt;###List all files and folders&lt;/p&gt;
 
-&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
+&lt;p&gt;Under directory mode, you can use&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;cd
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ls
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;来返回上一级。请注意，返回上一级的组件显示名称为“cd..”。执行这个组件就可以返回上一级文件夹。&lt;/p&gt;
+&lt;p&gt;to list all files and folders&lt;/p&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;显示所有文件或文件夹&lt;/h3&gt;
+&lt;p&gt;###Move file&lt;/p&gt;
 
-&lt;p&gt;在文件管理模式下，你可以使用&lt;/p&gt;
+&lt;p&gt;You can move files using connection operator. For instance, use&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;ls
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd download/wallpaer-&amp;gt;images
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;来显示该文件夹下所有的文件或文件夹。&lt;/p&gt;
+&lt;p&gt;to move file /download/wallpaper.png to folder download/images&lt;/p&gt;
 
-&lt;p&gt;同时，在没有进入文件管理模式的情况下，你还可以通过&lt;/p&gt;
+&lt;p&gt;###Delete file or folder&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;ls download
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can connect any folders or files to&lt;/p&gt;
 
-&lt;p&gt;来直接显示download文件夹下的所有文件或文件夹（尚未实现）。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;section-3&quot;&gt;移动文件&lt;/h3&gt;
-&lt;p&gt;你可以通过连接符来进行文件的移动。以上面的例子来说，指令&lt;/p&gt;
+&lt;p&gt;to delete them. For instance, if you’d like to delete file /download/wallpaper.png, use&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;cd do/w.images
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;download/wallpaper-&amp;gt;delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;会把/download/wallpaper.png这个文件移动到/download/images文件夹中。&lt;/p&gt;
+&lt;p&gt;Moreover, you can use startsWith or endsWith to delete certain files whose names start or end with certains string. For instance, if you’d like to delete all files in /download that end with avi, you can use&lt;/p&gt;
 
-&lt;h3 id=&quot;section-4&quot;&gt;删除文件&lt;/h3&gt;
-
-&lt;p&gt;你可以将任意文件或文件夹连接到指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来进删除。例如在前面的例子中，删除文件download/wallpaper.png可以使用指令&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd do/w.rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;来实现。&lt;/p&gt;
-
-&lt;p&gt;同时，你还可以配合startw和endw进行批量操作。例如，你想要删除download文件夹下所有以avi结尾的文件，你可以这个指令来实现：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd download.endw gif.rm
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd download-&amp;gt;endswith avi-&amp;gt;delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
  </entry>
  
  <entry>
-   <title>书签管理的使用</title>
-   <link href="http://www.arislauncher.com/aris/guide/2017/07/26/bookmark/"/>
+   <title>Develop scripts</title>
+   <link href="http://localhost:4000/aris/guide/2018/02/10/develop/"/>
+   <updated>2018-02-10T00:31:43+08:00</updated>
+   <id>http://localhost:4000/aris/guide/2018/02/10/develop</id>
+   <content type="html">&lt;p&gt;Starting from 1.1.70, Aris provides a few plugins which you can work with to develop plugins based on HTTP request. Here we’ll have a simple example on getting currency to walk you into the usage of these plugins.&lt;/p&gt;
+
+&lt;p&gt;To begin with, type “dddddvlp” to enable develop plugins.&lt;/p&gt;
+
+&lt;p&gt;We can get currency rates for various of currencies using this API:
+https://api.fixer.io/latest?base=CNY&amp;amp;symbols=USD&lt;/p&gt;
+
+&lt;p&gt;So now copy this url and execute “copy-&amp;gt;post”&lt;/p&gt;
+
+&lt;p&gt;Within seconds, the console will output&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{&quot;base&quot;:&quot;CNY&quot;,&quot;date&quot;:&quot;2017-11-20&quot;,&quot;rates&quot;:{&quot;USD&quot;:0.15074}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, you can connect this message to plugin JGET directly using connect operator. For instance, use&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-&amp;gt;jget rates  then you'll have 
+
+{&quot;USD&quot;:0.15074}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To take one further step, if you only need the value for USD against CNY, just do&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-&amp;gt;jget USD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That is to say, the full code of getting the value for CNY against USD is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.fixer.io/latest?base=CNY&amp;amp;symbols=USD-&amp;gt;post-&amp;gt;jget rates-&amp;gt;jget usd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you’ve created your very first script, congratulations! So I guess you’d very like to save this script so you can check the rate once in a while. Sure can do by connecting your script with “add” and name it “usd” like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.fixer.io/latest?base=CNY&amp;amp;symbols=USD-&amp;gt;post-&amp;gt;jget rates-&amp;gt;jget usd-&amp;gt;add usd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After the script is saved, you can simply use usd to get the currency rate.&lt;/p&gt;
+
+&lt;p&gt;Now let’s say you have multiple currencies to watch, then you’ll need $s as parameter and save the script so you can use it to get differenct currency rates against CNY. Now the script goes like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.fixer.io/latest?base=CNY&amp;amp;symbols=$s-&amp;gt;post-&amp;gt;jget rates-&amp;gt;jget usd-&amp;gt;add currency
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can use&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;USD-&amp;gt;currency 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to get currency rate of USD agains CNY.&lt;/p&gt;
+
+&lt;p&gt;–To be continued–&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Build your plugins</title>
+   <link href="http://localhost:4000/aris/guide/2017/07/26/arscript/"/>
    <updated>2017-07-26T00:31:43+08:00</updated>
-   <id>http://www.arislauncher.com/aris/guide/2017/07/26/bookmark</id>
-   <content type="html">&lt;h2 id=&quot;section&quot;&gt;书签管理&lt;/h2&gt;
+   <id>http://localhost:4000/aris/guide/2017/07/26/arscript</id>
+   <content type="html">&lt;h2 id=&quot;alias-and-folder&quot;&gt;Alias and Folder&lt;/h2&gt;
 
-&lt;p&gt;书签管理插件可以让你把你需要的网页保存到Aris。这样你就可以直接在Aris上打开这个链接。使用的方法也很简单：&lt;/p&gt;
+&lt;p&gt;Starting from 1.0.90, Alias is officially part of Airs default plugin.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;网址&amp;gt;.wadd
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this post, we’d assume you’ve read through the post Directory. If not, please click the link and check it out.&lt;/p&gt;
 
-&lt;p&gt;需要注意的是，因为网址包含了.，而在Aris中点号是连接符。所以如果你输入&lt;/p&gt;
+&lt;p&gt;If you’d like to share the file you lately downloaded from you broswer(let’s say the folder locates in /browser/download/files) to your firends in WhatsApp, you’d probably use:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;www.google.com.wadd
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd browser/download/files.latest.whatsapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Aris不会完整地识别这个地址。当然，在大部分情况下，你也不会一个一个地址的输入，而是从浏览器复制网页地址，然后再使用&lt;/p&gt;
+&lt;p&gt;If you’re going to use it very ofter, typing such long instruction would be unevitably painful. This is where Alias comes in. Use the following instruction to turn this long instruction into a simple word.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;clipboard.wadd
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd browser/download/files-&amp;gt;latest-&amp;gt;whatsapp-&amp;gt;add dlw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;即可。&lt;/p&gt;
+&lt;p&gt;As you can see, the trick is at ‘-&amp;gt;add’. This is what we call Alias.&lt;/p&gt;
 
-&lt;p&gt;网页必须以http://或者https://开头，对于网址&lt;/p&gt;
+&lt;p&gt;Now, when you execute ‘dlw’, Aris will equally share the latest file in folder /browser/download/files into WhatsApp.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;http://www.google.com
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you’re not sure which app you’ll be using to share this file, just save this script as ‘dll’.&lt;/p&gt;
 
-&lt;p&gt;会保存为google书签。需要打开这个链接时，只需要输入google即可。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd browser/download/files-&amp;gt;latest-&amp;gt;add dll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;同时，你可以可以指定书签的搜索名称。例如&lt;/p&gt;
+&lt;p&gt;Then share it to WhatsApp, Facebook or whatsover:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;网址&amp;gt;.wadd google
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dll-&amp;gt;whatsapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;此时，不管网址是什么，你都可以通过google搜索到它。&lt;/p&gt;
+&lt;p&gt;Moreover, you can add single app or contact using Alias. The app you just added will show up in the folder in the sliding drawer, along with a bunch of other plugins you created using Alias.&lt;/p&gt;
 
-&lt;p&gt;此外，你也可以批量导入多个书签，用英文的逗号(,)隔开即可。&lt;/p&gt;
-
-&lt;p&gt;如果需要删除某个书签，使用&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;书签&amp;gt;.wrm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;即可。&lt;/p&gt;
 </content>
  </entry>
  
