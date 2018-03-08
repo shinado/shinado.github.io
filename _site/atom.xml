@@ -4,13 +4,32 @@
  <title>Aris Launcher</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-02-21T21:45:26+08:00</updated>
+ <updated>2018-03-08T17:28:30+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Daniel Ng</name>
    <email>shinado023@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Use SLock to lock Aris</title>
+   <link href="http://localhost:4000/aris/promotion/2018/02/10/slock/"/>
+   <updated>2018-02-10T00:31:43+08:00</updated>
+   <id>http://localhost:4000/aris/promotion/2018/02/10/slock</id>
+   <content type="html">&lt;p&gt;Do you know you can lock Aris Launcher with lock plugin? If you don’t know, check this out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_lock.jpg&quot; alt=&quot;lock&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Look cool right? You can download it in Aris Store or click &lt;a href=&quot;aris://pipe?id=2008&quot;&gt;here&lt;/a&gt;! And then, simply input ‘lock’ to lock it!&lt;/p&gt;
+
+&lt;p&gt;Do you also know you can lock your launcher while some awesome code running in your console like this?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_slock.gif&quot; alt=&quot;lock&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Look even cooler? Click &lt;a href=&quot;aris://pipe?id=2033&quot;&gt;here&lt;/a&gt; to download now!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Aris Launcher</title>
@@ -101,6 +120,64 @@
 
 &lt;p&gt;we call Connect b with a, where the symbol(-&amp;gt;) is the connection operator.&lt;/p&gt;
 
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Use SLock to lock Aris</title>
+   <link href="http://localhost:4000/aris/promotion/2018/02/10/customize/"/>
+   <updated>2018-02-10T00:31:43+08:00</updated>
+   <id>http://localhost:4000/aris/promotion/2018/02/10/customize</id>
+   <content type="html">&lt;p&gt;Aris Launcher not only gives you a both efficient and cool way to use you Android, but also gives you freedom to customize it. If you’ve explored the ‘theme’ session of Aris Store. You’d probably wonder how you can fully customize your Aris. Good news for you, here’s the guide on making your Aris even cooler than it is.&lt;/p&gt;
+
+&lt;p&gt;###Wallpaer/Apperance
+This is the most basic and easy ways you can do to customize Aris. In case you haven’t found out how to do these settings, follow me on it.&lt;/p&gt;
+
+&lt;p&gt;Long press the empty space on the console, you will see two buttons popping up from the bottom.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_popup.jpg&quot; alt=&quot;popup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tap on the “wallpaper” button, you can either set a background color for Aris, or select wallpaper and set it as background.&lt;/p&gt;
+
+&lt;p&gt;When you click the “Appearance” button, you’ll see this widget displayed on the console.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_appearance.jpg&quot; alt=&quot;popup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you tap on the first one, text size, you will see an instruction asking you to set a text size. You can do this by entering the number of the text size then hit “enter” key on the keyboard.&lt;/p&gt;
+
+&lt;p&gt;The next two, console font and result font refers to the text in the display area(as we call console), and the results displayed when you search anything, respectively, which follows up text color, where you can set the color for the text on the console. Please also note that if you’re using Aris Keyboard, this color will aslo be applied for the keyboard.&lt;/p&gt;
+
+&lt;p&gt;As for the last three, they refer to the results showed up when you search for the items.&lt;/p&gt;
+
+&lt;p&gt;*Tips: If you can not find any empty space, use ‘clear’ to clear the console.&lt;/p&gt;
+
+&lt;p&gt;###Initiating message
+By default, this message will show up when you launch Aris.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_initext_default.jpg&quot; alt=&quot;popup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can change this message in the config page, with your personal information, some other cool hacky message, even display current weather or system information if you’ve got the plugins. To enter config page, you can either find it by typing ‘config’ or in the sliding folder.&lt;/p&gt;
+
+&lt;p&gt;Now find initiating text and edit. If you want to display a plugin in the initiating text, you can use ‘${plugin}’. For instance, if you’ve got the weather plugin, simply put ‘${weather}’ in the initiating text. Once you restart Aris, you’ll get something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_initext_weather.jpg&quot; alt=&quot;popup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;###Text on Executing
+This text will be displyed whenever you execute any item. By default, this text is set to “&lt;font color=&quot;#8B76AA&quot;&gt;$s&lt;/font&gt;”, which represents the output of the item itself. You can also use html tag to format this text.&lt;/p&gt;
+
+&lt;p&gt;For instance, by default, when you launch Google Maps, you’ll see this message being displayed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot_initext_google_map.jpg&quot; alt=&quot;popup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The purple text is the output of this Google Maps app. This message actually is a contaction of its package name and activity name, which allows Aris to launch this app accordingly.&lt;/p&gt;
+
+&lt;p&gt;###Console Output
+As shown in the previous screenshot, when you launch Google Maps, you’ll see the text in this format:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[time] console.execute -&amp;gt; [text on executing]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This can be changed in the Console Ouput column in the config. You can use ‘$t’ to display current time.&lt;/p&gt;
 </content>
  </entry>
  
