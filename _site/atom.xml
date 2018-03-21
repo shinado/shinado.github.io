@@ -4,7 +4,7 @@
  <title>Aris Launcher</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-03-14T09:05:19+08:00</updated>
+ <updated>2018-03-21T08:47:34+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Daniel Ng</name>
@@ -28,6 +28,10 @@
 &lt;p&gt;&lt;img src=&quot;/assets/screenshot_slock.gif&quot; alt=&quot;lock&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Look even cooler? Click &lt;a href=&quot;aris://pipe?id=2033&quot;&gt;here&lt;/a&gt; to download now!&lt;/p&gt;
+
+&lt;p&gt;Moreover, if you want to lock Aris when screen is off, simply go to config and turn on “lock when screen off”.&lt;/p&gt;
+
+&lt;p&gt;Now give it a try.&lt;/p&gt;
 </content>
  </entry>
  
