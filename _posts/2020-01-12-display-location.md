@@ -14,3 +14,5 @@ What you may not have known is, when you tap the "send" button and share your lo
 ![](/assets/image_locate_feed.png)
 
 Awesome, isn't it? Now use code 'locateme' and share your location with your friend! 
+
+[Tap here to find out more themes](aris://theme_store)
