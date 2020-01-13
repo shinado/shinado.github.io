@@ -1,39 +1,15 @@
-# Dependencies
-markdown:            kramdown
-highlighter:         rouge
+# Example Site settings
 
-# Gems (for Jekyll 3.0)
-gems: [jekyll-paginate]
+#google_analytics: UA-NNNNNNNN-N
 
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+#header_pages:
+#  - index.md
+#  - about.md
 
-# Setup
-title:               Aris Launcher
-tagline:             ‘The New Android Launcher’
-description:         ''
-url:                 http://www.arislauncher.com
-baseurl:             /
-paginate:            7
+#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
 
-# About/contact
-author:
-  name:              Daniel Ng
-  url:               https://twitter.com/shinado023
-  email:             shinado023@gmail.com
+#style: light # dark (default) or light
+#listen_for_clients_preferred_style: true # true or false (default)
 
-# Custom vars
-version:             2.0
-
-# Social Media
-github:				http://github.com/shinado
-twitter:			http://twitter.com/shinado023
-disqus:             h
-
-# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
-theme:
-  creator:			Rizky Ariestiyansyah
-  codename:			Naringu
-  link:             https://github.com/ariestiyansyah/naringu
+plugins:
+  - jekyll-seo-tag

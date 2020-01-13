@@ -1,88 +1,81 @@
-# Naringu
+# jekyll-theme-console
+
+A jekyll theme with inspiration from linux consoles for hackers, developers and script kiddies.
+
+<img src="https://raw.githubusercontent.com/b2a3e8/jekyll-theme-console/master/screenrec-dark.gif" width="550" title="Screenshot">
+
+## Demo
+
+[https://b2a3e8.github.io/jekyll-theme-console/](https://b2a3e8.github.io/jekyll-theme-console/)
+
+source code: [https://github.com/b2a3e8/jekyll-theme-console/tree/gh-pages](https://github.com/b2a3e8/jekyll-theme-console/tree/gh-pages)
 
 
-Naringu is dark jekyll theme that provide fully furnished jekyll setup, come with contact form, #6DD HTML color schema, and more features. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+## Installation
 
-![Naringu](images/screenshot-1.png)
-![Naringu](images/screenshot-2.png)
-![Naringu](images/screenshot-3.png)
-![Naringu](images/screenshot-4.png)
+Add this line to your Jekyll site's `Gemfile`:
 
-## Contents
+```ruby
+gem "jekyll-theme-console"
+```
 
-- [Usage](#usage)
- - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-  - [Contact Form](#contact-form)
-  - [Comments](#comments)
-- [Development](#development)
-  - [Author](#author)
-  - [Contributors](#contributors)
-- [License](#license)
+And add this line to your Jekyll site's `_config.yml`:
 
+```yaml
+theme: jekyll-theme-console
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install jekyll-theme-console
 
 ## Usage
 
-Just download and start the Jekyll server or fork this repo.
+In addition to jekyll's default configuration options, you can provide:
+- `header_pages` to specify which pages should be displayed in navbar
+- `footer` string, which will be inserted on the end of the page (doesn't support markup, but html)
+- `google_analytics` tracking id (tracking will be enabled only in production environments)
+- `listen_for_clients_preferred_style` boolean, used to allow users to choose theme based on their preferences (mostly affected by OS dark or light theme, details see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 
-### Sidebar menu
+```yaml
+header_pages:
+  - index.md
+  - about.md
 
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+style: dark # dark (default) or light
+listen_for_clients_preferred_style: true # true or false (default)
 
-```
----
-layout: page
-title: About
----
-```
+footer: 'follow us on <a href="https://twitter.com/xxx">twitter</a>'
 
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` 
-
-
-### Reverse layout
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-### Contact Form
-
-Using formspree to enable contact form in static site.
-
-Go a head `contact/index.html` just change the email in the code
-
-```html
-<form action="http://formspree.io/youremail@yourdomain.com" role="form" method="POST">
+google_analytics: UA-NNNNNNNN-N
 ```
 
-### Comments
+## Customization
 
-Using [disqus](http://disqus.com/) to enable comments in static site.
+If you want to customize this theme, follow this steps:
+1. Fork this repository (you can use the fork as your own theme or directly as your website)
+2. Create or modify files in `_layouts` directory for html-based changes
+3. Create or modify files in `_sass` and `assets` for css-based changes
+   - You can change things which are used in light and dark theme (like font-size) in `_sass/base.scss`. You'll find style variables at the top.
+   - Style-specific definitions are in `_sass/_dark.scss` respectively in `_sass/_light.scss`. You can change things like background-color there.
 
-Just edit variable `disqus` in `_config.yml` to your disqus link.
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/b2a3e8/jekyll-theme-console. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
-Naringu come with two branches :.
+To set up your environment to develop this theme, run `bundle install`.
 
-- `master` for active development. 
-- `gh-pages` for preview of Naringu
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-### Author
-
-**Rizky Ariestiyansyah**
-- <https://github.com/ariestiyansyah>
-- <https://twitter.com/ariestiyansyah>
-
-### Contributors
-
-**Gildásio Júnior** - *a.k.a. @gjuniioor*
-- https://github.com/gjuniioor
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-console.gemspec` accordingly.
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
