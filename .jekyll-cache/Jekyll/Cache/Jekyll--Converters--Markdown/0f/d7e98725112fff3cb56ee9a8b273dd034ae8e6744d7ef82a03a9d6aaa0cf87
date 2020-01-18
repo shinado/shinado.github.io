@@ -1,0 +1,20 @@
+I"�<h1 id="release-note-272">Release note 2.7.2</h1>
+
+<p>In our latest release, cd and shell command is back!</p>
+
+<p>Simply use ‘cd {file}’ to access to the folder/file; use ‘cd..’ to go back to parent folder, ‘exit’ to exit. And that’s it! Simple as that. 
+&lt;/br&gt;</p>
+
+<p><img src="/assets/screenshot_cd.png" alt="" /></p>
+
+<p>&lt;/br&gt;
+By using ‘shell’ you’ll be able to enter shell mode where you can use all shell commands. Simply use ‘exit’ to quit.<br />
+&lt;/br&gt;</p>
+
+<p><img src="/assets/screenshot_shell.png" alt="" /></p>
+
+<p>&lt;/br&gt;
+Cheers!</p>
+
+<p><a href="aris://theme_store">Tap here to find out more themes</a></p>
+:ET
