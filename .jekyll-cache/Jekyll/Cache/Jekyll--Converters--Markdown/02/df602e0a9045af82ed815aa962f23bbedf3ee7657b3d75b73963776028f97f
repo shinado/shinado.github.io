@@ -1,6 +1,9 @@
-I"�<h1 id="release-note-278">Release note 2.7.8</h1>
+I"d<h1 id="release-note-278">Release note 2.7.8</h1>
 
-<p>In our recent release, we improved directory mode with image/video thumbnails. When you use ‘cd’ and switch to a directory, images/videos will be displayed as thumbnails. If you are new to ‘cd’, simply type ‘cd’ and enter. After accept premissions, you’ll be in directory mode, like this:</p>
+<p>This tutorial is also available in our official youtube channel. <a href="https://www.youtube.com/watch?v=-L8Uj3i3tDU">Tap here to view</a></p>
+
+<p> 
+In our recent release, we improved directory mode with image/video thumbnails. When you use ‘cd’ and switch to a directory, images/videos will be displayed as thumbnails. If you are new to ‘cd’, simply type ‘cd’ and enter. After accept premissions, you’ll be in directory mode, like this:</p>
 
 <p><img src="/assets/update_278_1.jpg" alt="" /></p>
 
