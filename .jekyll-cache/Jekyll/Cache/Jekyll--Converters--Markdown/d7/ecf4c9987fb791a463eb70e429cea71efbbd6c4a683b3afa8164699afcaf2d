@@ -1,0 +1,73 @@
+I"X<h1 id="aris-tutorial---folder">Aris Tutorial - Folder</h1>
+
+<p>By default, we put a few of useful plugins in the folder, displayed here.</p>
+
+<p><img src="/assets/folder-1.png" alt="" /></p>
+
+<p> 
+There are three ways to check out what’s in your folder. By default, when there’s nothing in the input bar, all items in folder will be displayed so you can have an easy access to your most frequently used items. You can also change what to be displayed when there’s no input in config:</p>
+
+<p><img src="/assets/folder-2.png" alt="" /></p>
+
+<p> 
+The second way is to use instruction “folder” to display it as a floating window, like this:</p>
+
+<p><img src="/assets/folder-3.png" alt="" /></p>
+
+<p> 
+If you find a folder icon in your theme, you can also click on that to switch to folder, like this:</p>
+
+<p><img src="/assets/folder-4.png" alt="" /></p>
+
+<p> 
+Now let’s add/remove an item to/from the folder. Long tap “encrypt” tap “remove” to remove this plugin, like this:</p>
+
+<p><img src="/assets/folder-5.png" alt="" /></p>
+
+<p> 
+To add an item to folder, there are two ways — you can either use connection symbol(&gt;) or long tap an item to build connection. Let’s try adding an item, let’s say “phone” to the folder. Now type “phone&gt;” and select “add to folder”, or hit “go” in keyboard:</p>
+
+<p><img src="/assets/folder-7.png" alt="" /></p>
+
+<p> 
+Now this item has been added to the folder. You can find it here:</p>
+
+<p><img src="/assets/folder-6.png" alt="" /></p>
+
+<p> 
+Apart from apps/plugins/contacts, you can also add a website even an URL to launch WhatsApp.</p>
+
+<p>In this case, I’ll go to my Chrome browser and find one of my favorite site, and copy the link.</p>
+
+<p>Now let’s move back to Aris, use “clipboard&gt;add” to add this site to folder. Please note that “clipboard” gets the text in clipboard. You can also check out what is in clipboard by using “clipboard”.</p>
+
+<p><img src="/assets/folder-8.png" alt="" /></p>
+
+<p> 
+By default, if you do not rename a website, this website will be saved with its domain name. In this case, this website is saved as “express”. When you launch this item, you’ll visit this website.</p>
+
+<p><img src="/assets/folder-9.jpg" alt="" /></p>
+
+<p> 
+You can also rename this site. Do “clipboard&gt;add bookmark” and now you can find this site with name “bookmark”.</p>
+
+<p><img src="/assets/folder-10.png" alt="" /></p>
+
+<p> 
+To take one step further, you can use custom URL scheme to launch a certain app with certain action. Let’s try this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whatsapp://send?text=helloworld
+</code></pre></div></div>
+
+<p>Now, copy the text above and do “clipboard&gt;add”(to rename this url) and do “wapp”. You’ll be redirected to WhatsApp and choose a contact then you’ll find this:</p>
+
+<p><img src="/assets/folder-11.jpg" alt="" /></p>
+
+<p> 
+It’s incredible! With customize URL scheme, you can do a lot of things more efficiently!</p>
+
+<p> 
+Cheers!</p>
+
+<p><a href="aris://theme_store">Tap here to find out more themes</a></p>
+:ET
