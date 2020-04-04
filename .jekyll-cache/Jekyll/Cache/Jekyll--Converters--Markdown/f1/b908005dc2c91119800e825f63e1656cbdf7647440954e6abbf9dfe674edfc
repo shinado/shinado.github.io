@@ -1,0 +1,37 @@
+I")<h1 id="aris-tutorial---plugins">Aris Tutorial - Plugins</h1>
+
+<p>In this tutorial, we’re going to show you how</p>
+
+<p> 
+<img src="/assets/notification-1.png" alt="" /></p>
+
+<p> </p>
+
+<p>In order to enable notification display you need to both enable it in Aris and in Android systme. Firstly, go ‘config’ and enable notification.</p>
+
+<p> 
+<img src="/assets/notification-2.png" alt="" /></p>
+
+<p> </p>
+
+<p>After you enable notification in Aris configuration, you’ll be directed to system notification settings. Now enable it for the Launcher you are using.</p>
+
+<p> 
+<img src="/assets/notification-3.png" alt="" /></p>
+
+<p> </p>
+
+<p>Now, go back to home screen and if you see this notification, it means notifiaction has been successfully enabled:</p>
+
+<p> 
+<img src="/assets/notification-4.png" alt="" /></p>
+
+<p> </p>
+
+<p>Apart from that, you can also change the styles of the notification in ‘config’. We have 3 notification styles available.</p>
+
+<p> 
+Cheers!</p>
+
+<p><a href="aris://theme_store">Tap here to find out more themes</a></p>
+:ET

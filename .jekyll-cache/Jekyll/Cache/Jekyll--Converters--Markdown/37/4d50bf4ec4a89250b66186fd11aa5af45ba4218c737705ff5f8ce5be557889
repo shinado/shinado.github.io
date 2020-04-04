@@ -1,0 +1,51 @@
+I"�<h1 id="aris-tutorial---plugins">Aris Tutorial - Plugins</h1>
+
+<p>In this tutorial, we’re going to show you Aris plugins, some of which are cool, others are pretty useful.</p>
+
+<p><strong>clear</strong> enables you to clear all messages in home screen.</p>
+
+<p><strong>restart</strong> apparently will reboot Aris. If things start getting weird, it’s recommended to use this command to reboot Aris.</p>
+
+<p><strong>apps</strong> takes you to a regular app list where you can find all apps, in an old fasion way. This works when you sometimes really can’t find your app.</p>
+
+<p><strong>config</strong> takes you to configuration page.</p>
+
+<p><strong>store</strong> takes you to Aris store.</p>
+
+<p><strong>torch</strong> toggle the flash.</p>
+
+<p><strong>bluetooth</strong> toggle the bluetooth.</p>
+
+<p> 
+<img src="/assets/notification-1.png" alt="" /></p>
+
+<p> </p>
+
+<p>In order to enable notification display you need to both enable it in Aris and in Android systme. Firstly, go ‘config’ and enable notification.</p>
+
+<p> 
+<img src="/assets/notification-2.png" alt="" /></p>
+
+<p> </p>
+
+<p>After you enable notification in Aris configuration, you’ll be directed to system notification settings. Now enable it for the Launcher you are using.</p>
+
+<p> 
+<img src="/assets/notification-3.png" alt="" /></p>
+
+<p> </p>
+
+<p>Now, go back to home screen and if you see this notification, it means notifiaction has been successfully enabled:</p>
+
+<p> 
+<img src="/assets/notification-4.png" alt="" /></p>
+
+<p> </p>
+
+<p>Apart from that, you can also change the styles of the notification in ‘config’. We have 3 notification styles available.</p>
+
+<p> 
+Cheers!</p>
+
+<p><a href="aris://theme_store">Tap here to find out more themes</a></p>
+:ET

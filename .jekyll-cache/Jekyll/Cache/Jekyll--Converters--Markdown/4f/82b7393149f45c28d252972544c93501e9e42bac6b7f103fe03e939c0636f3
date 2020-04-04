@@ -1,0 +1,67 @@
+I"�<h1 id="aris-tutorial---plugins">Aris Tutorial - Plugins</h1>
+
+<p>In this tutorial, we’re going to show you Aris plugins, some of which are cool, others are pretty useful.</p>
+
+<p><strong>clear</strong> enables you to clear all messages in home screen.</p>
+
+<p><strong>restart</strong> apparently will reboot Aris. If things start getting weird, it’s recommended to use this command to reboot Aris.</p>
+
+<p><strong>apps</strong> takes you to a regular app list where you can find all apps, in an old fasion way. This works when you sometimes really can’t find your app.</p>
+
+<p><strong>config</strong> takes you to configuration page.</p>
+
+<p><strong>store</strong> takes you to Aris store.</p>
+
+<p><strong>torch</strong> toggles the flash.</p>
+
+<p><strong>bluetooth</strong> toggles the bluetooth.</p>
+
+<p><strong>wifi</strong> displays the wifi settings as a floating window, like this:</p>
+
+<p> 
+<img src="/assets/plugin-1.jpeg" alt="" /></p>
+
+<p> </p>
+
+<p>Apart from that, we have a bunch of cool plugins, just to look cool. By using the command, a floating window will show up correspondingly.</p>
+
+<p><strong>locateme</strong> displays a window shows your current location.</p>
+
+<p> 
+<img src="/assets/plugin-2.jpeg" alt="" /></p>
+
+<p> </p>
+
+<p><strong>encrypt</strong> displays a window of encrypting message. BTW, in ‘instant run’ section, we’ll further explain how to encrypt any messages and send it to a friend.</p>
+
+<p> 
+<img src="/assets/plugin-3.jpeg" alt="" /></p>
+
+<p> </p>
+
+<p><strong>memory</strong> displays a window of system memory changes.</p>
+
+<p> 
+<img src="/assets/plugin-4.jpeg" alt="" /></p>
+
+<p> </p>
+
+<p><strong>globe</strong> displays a cool animated globe view.</p>
+
+<p> 
+<img src="/assets/plugin-5.jpeg" alt="" /></p>
+
+<p> </p>
+
+<p><strong>snake</strong> displays a snake game that you can actually play(have fun:]).</p>
+
+<p> 
+<img src="/assets/plugin-6.jpeg" alt="" /></p>
+
+<p> </p>
+
+<p> 
+Cheers!</p>
+
+<p><a href="aris://theme_store">Tap here to find out more themes</a></p>
+:ET
